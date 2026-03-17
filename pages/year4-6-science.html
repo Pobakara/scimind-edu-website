@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Year 4–6 Primary Science Tutoring Melbourne | SciMind Education</title>
+  <meta name="description" content="Curiosity-first primary science tutoring for Year 4–6 in Melbourne. Australian Curriculum aligned. Small groups and 1-on-1. Build scientific thinking and prepare for secondary school."/>
+  <meta name="keywords" content="Year 4 5 6 science tutor Melbourne, primary science tutoring, kids science tutor Melbourne, science tutor primary school"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.scimindeducation.com.au/programs/year4-6-science"/>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Year 4–6 Primary Science Tutoring Melbourne | SciMind Education"/>
+  <meta property="og:description" content="Curiosity-first primary science tutoring, Australian Curriculum aligned. Build scientific thinking and Year 7 readiness."/>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Year 4–6 Science Tutoring Program",
+    "description": "Curiosity-first primary science tutoring for Year 4–6, covering the Australian Curriculum's Living World, Chemical, Physical and Earth & Space sciences.",
+    "provider": { "@type": "EducationalOrganization", "name": "SciMind Education", "url": "https://www.scimindeducation.com.au" },
+    "educationalLevel": "Year 4–6 Primary",
+    "inLanguage": "en-AU",
+    "isAccessibleForFree": false,
+    "hasCourseInstance": { "@type": "CourseInstance", "courseMode": ["onsite", "online"] }
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom.css?v=12"/>
+
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          navy:  { DEFAULT: '#003a7d' }, teal: { DEFAULT: '#0b81a2' }, mint: { DEFAULT: '#59a89c' }
+        },
+        fontFamily: { sans: ['Inter','system-ui','sans-serif'], display: ['Poppins','system-ui','sans-serif'] }
+      }}
+    }
+  </script>
+
+  <style>
+    .section-light { background-color: #f8fafc !important; color: #1e293b !important; }
+    .section-grey  { background-color: #f1f5f9 !important; color: #1e293b !important; }
+    .section-light .section-title, .section-grey .section-title { color: #1e293b !important; }
+    .section-light .section-subtitle, .section-grey .section-subtitle { color: #64748b !important; }
+    .section-light .section-badge, .section-grey .section-badge { color: #59a89c !important; background: rgba(89,168,156,0.09) !important; border-color: rgba(89,168,156,0.22) !important; }
+    .section-light .glass-card, .section-grey .glass-card { background: #ffffff !important; border: 1px solid #e2e8f0 !important; box-shadow: 0 4px 20px rgba(0,0,0,0.06) !important; backdrop-filter: none !important; }
+    .section-light .glass-card h3, .section-grey .glass-card h3 { color: #1e293b !important; }
+    .section-light .glass-card p, .section-grey .glass-card p { color: #64748b !important; }
+    .journey-step { position: relative; text-align: center; flex: 1; padding: 0 8px; }
+    .journey-step::before { content: ''; position: absolute; top: 24px; left: calc(50% + 28px); right: calc(-50% + 28px); height: 2px; background: linear-gradient(to right, rgba(89,168,156,0.5), rgba(11,129,162,0.3)); }
+    .journey-step:last-child::before { display: none; }
+    .journey-icon { width: 48px; height: 48px; border-radius: 50%; background: rgba(89,168,156,0.15); border: 2px solid rgba(89,168,156,0.4); display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; }
+    .curriculum-card { border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.07); }
+    .curriculum-btn { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 18px 20px; text-align: left; gap: 12px; background: rgba(255,255,255,0.04); }
+    .curriculum-btn:hover { background: rgba(255,255,255,0.07); }
+    .curriculum-body { padding: 0 20px 18px; }
+    .tick-item { display: flex; align-items: flex-start; gap: 8px; font-size: 0.875rem; }
+    .stat-tile { text-align: center; padding: 20px 12px; border: 1px solid rgba(89,168,156,0.2); border-radius: 12px; background: rgba(89,168,156,0.05); }
+  </style>
+</head>
+
+<body class="bg-[#020d1a] text-white font-sans antialiased overflow-x-hidden">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 scrolled" x-data="{ mobileOpen: false }">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="../index.html" class="flex items-center" aria-label="SciMind Education - Home">
+      <img src="../assets/images/H - White and Color.svg" alt="SciMind Education" class="h-9 w-auto object-contain" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+      <div style="display:none" class="items-center gap-2"><div class="w-8 h-8 rounded-lg bg-gradient-to-br from-teal to-mint flex items-center justify-center"><span class="font-display font-extrabold text-sm text-white">S</span></div><span class="font-display font-bold text-white text-lg">SciMind</span></div>
+    </a>
+    <div class="hidden md:flex items-center gap-6">
+      <a href="../index.html"         class="text-white/70 hover:text-mint transition-colors text-sm font-medium">Home</a>
+      <a href="about.html"            class="text-white/70 hover:text-mint transition-colors text-sm font-medium">About</a>
+      <a href="programs.html"         class="text-mint text-sm font-medium">Programs</a>
+      <a href="learning-hub.html"     class="text-white/70 hover:text-mint transition-colors text-sm font-medium">Learning Hub</a>
+      <a href="../index.html#partner" class="text-white/70 hover:text-mint transition-colors text-sm font-medium">Partnership</a>
+      <a href="enrol.html" class="text-white/70 hover:text-mint transition-colors text-sm font-medium">Contact</a>
+    </div>
+    <a href="enrol.html" class="hidden md:inline-flex btn-primary text-sm px-5 py-2.5">Enrol Now <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></a>
+    <button @click="mobileOpen = !mobileOpen" class="md:hidden p-2 rounded-lg text-white/70">
+      <svg x-show="!mobileOpen" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <svg x-show="mobileOpen"  class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div x-show="mobileOpen" x-transition class="md:hidden border-t border-white/5 bg-[#020d1a]/97 backdrop-blur-xl">
+    <div class="px-6 py-4 space-y-3 text-sm">
+      <a href="../index.html"         class="block text-white/70 hover:text-mint py-2 transition-colors">Home</a>
+      <a href="about.html"            class="block text-white/70 hover:text-mint py-2 transition-colors">About</a>
+      <a href="programs.html"         class="block text-mint py-2">Programs</a>
+      <a href="learning-hub.html"     class="block text-white/70 hover:text-mint py-2 transition-colors">Learning Hub</a>
+      <a href="../index.html#partner" class="block text-white/70 hover:text-mint py-2 transition-colors">Partnership</a>
+      <a href="enrol.html" class="block text-white/70 hover:text-mint py-2 transition-colors">Contact</a>
+      <a href="enrol.html" class="btn-primary w-full justify-center mt-2">Enrol Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="relative pt-28 pb-20 px-6 overflow-hidden">
+  <div class="absolute inset-0 bg-hero-glow pointer-events-none"></div>
+  <div class="blob blob-1" style="opacity:.4"></div>
+  <div class="blob blob-2" style="opacity:.25"></div>
+  <div class="absolute inset-0 grid-overlay opacity-10 pointer-events-none"></div>
+  <nav aria-label="Breadcrumb" class="relative z-10 max-w-7xl mx-auto mb-8">
+    <ol class="flex items-center gap-2 text-sm text-white/40">
+      <li><a href="../index.html" class="hover:text-mint transition-colors">Home</a></li>
+      <li><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></li>
+      <li><a href="programs.html" class="hover:text-mint transition-colors">Programs</a></li>
+      <li><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></li>
+      <li class="text-white/70" aria-current="page">Year 4–6 Science</li>
+    </ol>
+  </nav>
+  <div class="relative z-10 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="section-badge mb-5 inline-block fade-in-up" style="color:#59a89c;background:rgba(89,168,156,0.10);border-color:rgba(89,168,156,0.25);">Years 4–6 · Primary Curriculum</span>
+        <h1 class="font-display font-extrabold text-5xl md:text-6xl xl:text-7xl leading-[1.06] mb-6 fade-in-up">
+          Year 4–6<br/><span class="gradient-text">Science Tutoring.</span>
+        </h1>
+        <p class="text-white/55 text-lg md:text-xl mb-8 leading-relaxed fade-in-up">
+          Spark curiosity and build scientific thinking in primary school students. Aligned to the Australian Curriculum, our Year 4–6 program grows confident young scientists ready for secondary school.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 fade-in-up">
+          <a href="enrol.html" class="btn-primary text-base px-8 py-3.5">Enrol in This Program <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></a>
+          <a href="#curriculum" class="btn-secondary text-base px-8 py-3.5">See Curriculum</a>
+        </div>
+      </div>
+      <div class="hidden lg:grid grid-cols-2 gap-3 fade-in-up">
+        <div class="glass-card rounded-2xl p-5 border border-mint/25">
+          <div class="w-9 h-9 rounded-xl border flex items-center justify-center mb-3" style="background:rgba(89,168,156,0.18);border-color:rgba(89,168,156,0.35)">
+            <svg class="w-5 h-5 text-mint" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064"/></svg>
+          </div>
+          <p class="font-semibold text-white text-sm mb-1">Living World</p>
+          <p class="text-white/40 text-xs leading-relaxed">Plants, animals &amp; ecosystems</p>
+        </div>
+        <div class="glass-card rounded-2xl p-5 border border-mint/25">
+          <div class="w-9 h-9 rounded-xl border flex items-center justify-center mb-3" style="background:rgba(89,168,156,0.18);border-color:rgba(89,168,156,0.35)">
+            <svg class="w-5 h-5 text-mint" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          </div>
+          <p class="font-semibold text-white text-sm mb-1">Chemical</p>
+          <p class="text-white/40 text-xs leading-relaxed">Matter &amp; changes</p>
+        </div>
+        <div class="glass-card rounded-2xl p-5 border border-teal/25">
+          <div class="w-9 h-9 rounded-xl bg-teal/20 border border-teal/30 flex items-center justify-center mb-3">
+            <svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <p class="font-semibold text-white text-sm mb-1">Physical</p>
+          <p class="text-white/40 text-xs leading-relaxed">Forces, light &amp; sound</p>
+        </div>
+        <div class="glass-card rounded-2xl p-5 border border-teal/25">
+          <div class="w-9 h-9 rounded-xl bg-teal/20 border border-teal/30 flex items-center justify-center mb-3">
+            <svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <p class="font-semibold text-white text-sm mb-1">Earth &amp; Space</p>
+          <p class="text-white/40 text-xs leading-relaxed">Weather &amp; solar system</p>
+        </div>
+        <div class="col-span-2 glass-card rounded-2xl p-4 flex items-center justify-between border border-white/8">
+          <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-mint" style="box-shadow:0 0 6px #59a89c"></div><span class="text-white/60 text-sm">Enrolling now for 2026</span></div>
+          <div class="flex gap-2">
+            <span class="text-xs px-2.5 py-1 rounded-full bg-white/8 text-white/50 border border-white/12">Yr 4–6</span>
+            <span class="text-xs px-2.5 py-1 rounded-full border font-medium" style="background:rgba(89,168,156,0.18);border-color:rgba(89,168,156,0.35);color:#59a89c">Max 6</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- OVERVIEW -->
+<section class="py-16 px-6 section-light" aria-label="Program overview">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <div class="fade-in-up">
+        <span class="section-badge mb-4 inline-block">About This Program</span>
+        <h2 class="section-title mb-4">Science Should Spark Wonder</h2>
+        <p class="text-slate-600 leading-relaxed mb-4">Primary school is the best time to build a genuine love of science. At SciMind, our Year 4–6 program is designed around curiosity — we ask big questions, explore ideas hands-on, and help students develop the scientific thinking skills that underpin all future science learning.</p>
+        <p class="text-slate-600 leading-relaxed mb-6">Every session covers real scientific concepts from the Australian Curriculum in a way that feels exploratory and rewarding. We build vocabulary, inquiry habits and problem-solving skills — the foundation for success in secondary science and beyond.</p>
+        <ul class="space-y-3">
+          <li class="tick-item text-slate-600"><svg class="w-5 h-5 text-mint flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> All four Australian Curriculum primary science strands</li>
+          <li class="tick-item text-slate-600"><svg class="w-5 h-5 text-mint flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Curiosity-first, inquiry-based learning approach</li>
+          <li class="tick-item text-slate-600"><svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Scientific vocabulary and communication skills</li>
+          <li class="tick-item text-slate-600"><svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Confident Year 7 science readiness</li>
+        </ul>
+      </div>
+      <div class="fade-in-up">
+        <div class="rounded-2xl p-6 border border-mint/20 bg-gradient-to-br from-mint/8 to-transparent">
+          <h3 class="font-display font-bold text-slate-800 text-lg mb-5">Program At a Glance</h3>
+          <div class="grid grid-cols-2 gap-3 mb-5">
+            <div class="stat-tile"><p class="text-2xl font-extrabold font-display text-mint mb-1">Yr 4–6</p><p class="text-xs text-slate-500 font-medium">Year Level</p></div>
+            <div class="stat-tile"><p class="text-2xl font-extrabold font-display text-mint mb-1">Max 6</p><p class="text-xs text-slate-500 font-medium">Students per group</p></div>
+            <div class="stat-tile"><p class="text-2xl font-extrabold font-display text-mint mb-1">60 min</p><p class="text-xs text-slate-500 font-medium">Session length</p></div>
+            <div class="stat-tile"><p class="text-2xl font-extrabold font-display text-mint mb-1">Primary</p><p class="text-xs text-slate-500 font-medium">Curriculum</p></div>
+          </div>
+          <div class="space-y-2.5 text-sm">
+            <div class="flex items-center justify-between py-2.5 border-b border-slate-200"><span class="text-slate-500">Format</span><span class="font-medium text-slate-800">Group / 1-on-1 / Online</span></div>
+            <div class="flex items-center justify-between py-2.5 border-b border-slate-200"><span class="text-slate-500">Location</span><span class="font-medium text-slate-800">Melbourne or Online</span></div>
+            <div class="flex items-center justify-between py-2.5"><span class="text-slate-500">Partner Centre</span><span class="font-medium text-slate-800">Vinsara Institute</span></div>
+          </div>
+          <a href="enrol.html" class="btn-primary w-full justify-center mt-6 text-sm" style="background:linear-gradient(135deg,#59a89c,#0b81a2)">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEARNING JOURNEY -->
+<section class="py-20 px-6" aria-label="Learning Journey">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12 fade-in-up">
+      <span class="section-badge mb-4 inline-block" style="color:#59a89c;background:rgba(89,168,156,0.10);border-color:rgba(89,168,156,0.25);">The Journey</span>
+      <h2 class="font-display font-extrabold text-4xl text-white mb-4">Your Child's Science Journey</h2>
+      <p class="text-white/50 max-w-xl mx-auto">Four progressive stages that develop scientific thinking from Year 4 through to confident Year 7 readiness.</p>
+    </div>
+
+    <div class="hidden md:flex items-start fade-in-up">
+      <div class="journey-step">
+        <div class="journey-icon" style="background:rgba(89,168,156,0.15);border-color:rgba(89,168,156,0.4)"><svg class="w-6 h-6 text-mint" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
+        <div class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-mint text-white text-xs font-bold mb-2">1</div>
+        <h3 class="font-semibold text-white text-sm mb-1">Curiosity</h3>
+        <p class="text-white/40 text-xs leading-relaxed px-1">Yr 4: exploring science through questions &amp; wonder</p>
+      </div>
+      <div class="journey-step">
+        <div class="journey-icon" style="background:rgba(89,168,156,0.15);border-color:rgba(89,168,156,0.4)"><svg class="w-6 h-6 text-mint" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg></div>
+        <div class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-mint text-white text-xs font-bold mb-2">2</div>
+        <h3 class="font-semibold text-white text-sm mb-1">Exploration</h3>
+        <p class="text-white/40 text-xs leading-relaxed px-1">Yr 4–5: hands-on investigation of living &amp; physical world</p>
+      </div>
+      <div class="journey-step">
+        <div class="journey-icon" style="background:rgba(11,129,162,0.15);border-color:rgba(11,129,162,0.4)"><svg class="w-6 h-6 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg></div>
+        <div class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-teal text-white text-xs font-bold mb-2">3</div>
+        <h3 class="font-semibold text-white text-sm mb-1">Discovery</h3>
+        <p class="text-white/40 text-xs leading-relaxed px-1">Yr 5–6: deeper concepts &amp; scientific explanations</p>
+      </div>
+      <div class="journey-step">
+        <div class="journey-icon" style="background:rgba(11,129,162,0.15);border-color:rgba(11,129,162,0.4)"><svg class="w-6 h-6 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+        <div class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-teal text-white text-xs font-bold mb-2">4</div>
+        <h3 class="font-semibold text-white text-sm mb-1">Scientific Thinking</h3>
+        <p class="text-white/40 text-xs leading-relaxed px-1">Yr 6: inquiry, reasoning &amp; Year 7 readiness</p>
+      </div>
+    </div>
+
+    <ol class="md:hidden space-y-6 fade-in-up">
+      <li class="flex items-start gap-4"><div class="flex-shrink-0 flex flex-col items-center"><div class="w-10 h-10 rounded-full border-2 flex items-center justify-center" style="background:rgba(89,168,156,0.2);border-color:rgba(89,168,156,0.4)"><span class="font-bold text-mint text-sm">1</span></div><div class="w-px flex-1 bg-mint/20 mt-2"></div></div><div class="pb-6"><h3 class="font-semibold text-white mb-1">Curiosity</h3><p class="text-white/45 text-sm">Yr 4: exploring science through questions and wonder</p></div></li>
+      <li class="flex items-start gap-4"><div class="flex-shrink-0 flex flex-col items-center"><div class="w-10 h-10 rounded-full border-2 flex items-center justify-center" style="background:rgba(89,168,156,0.2);border-color:rgba(89,168,156,0.4)"><span class="font-bold text-mint text-sm">2</span></div><div class="w-px flex-1 bg-mint/20 mt-2"></div></div><div class="pb-6"><h3 class="font-semibold text-white mb-1">Exploration</h3><p class="text-white/45 text-sm">Yr 4–5: hands-on investigation of living and physical world</p></div></li>
+      <li class="flex items-start gap-4"><div class="flex-shrink-0 flex flex-col items-center"><div class="w-10 h-10 rounded-full border-2 flex items-center justify-center" style="background:rgba(11,129,162,0.2);border-color:rgba(11,129,162,0.4)"><span class="font-bold text-teal text-sm">3</span></div><div class="w-px flex-1 bg-teal/20 mt-2"></div></div><div class="pb-6"><h3 class="font-semibold text-white mb-1">Discovery</h3><p class="text-white/45 text-sm">Yr 5–6: deeper concepts and scientific explanations</p></div></li>
+      <li class="flex items-start gap-4"><div class="flex-shrink-0 flex flex-col items-center"><div class="w-10 h-10 rounded-full border-2 flex items-center justify-center" style="background:rgba(11,129,162,0.2);border-color:rgba(11,129,162,0.4)"><span class="font-bold text-teal text-sm">4</span></div></div><div><h3 class="font-semibold text-white mb-1">Scientific Thinking</h3><p class="text-white/45 text-sm">Yr 6: inquiry, reasoning and Year 7 readiness</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- CURRICULUM -->
+<section id="curriculum" class="py-20 px-6 section-grey" aria-label="Curriculum breakdown">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-10 fade-in-up"><span class="section-badge mb-4 inline-block">Curriculum</span><h2 class="section-title">What We Explore</h2><p class="section-subtitle max-w-lg mx-auto">All four Australian Curriculum primary science strands, explored through questions, activities and real-world connections.</p></div>
+    <div class="space-y-3 fade-in-up" x-data="{ expanded: null }">
+
+      <div class="curriculum-card bg-white shadow-sm">
+        <button @click="expanded = expanded === 1 ? null : 1" class="curriculum-btn" :aria-expanded="expanded === 1">
+          <div class="flex items-center gap-3"><span class="text-xs font-bold text-white px-2.5 py-1 rounded-md flex-shrink-0" style="background:#59a89c">Living World</span><div><p class="font-semibold text-slate-800 text-sm">Biological Sciences</p><p class="text-slate-400 text-xs">Plants, animals, ecosystems &amp; adaptations</p></div></div>
+          <svg :class="expanded === 1 ? 'rotate-180' : ''" class="w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="expanded === 1" x-transition class="curriculum-body border-t border-slate-100">
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 pt-4 text-sm text-slate-600">
+            <li class="flex gap-2"><span class="text-mint">•</span> Needs of living things — food, water, air, shelter</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Plant structures &amp; how they work</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Animal adaptations &amp; survival strategies</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Food chains &amp; food webs</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Ecosystems — habitats &amp; biodiversity</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Human body systems overview (Yr 5–6)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="curriculum-card bg-white shadow-sm">
+        <button @click="expanded = expanded === 2 ? null : 2" class="curriculum-btn" :aria-expanded="expanded === 2">
+          <div class="flex items-center gap-3"><span class="text-xs font-bold text-white px-2.5 py-1 rounded-md flex-shrink-0" style="background:#59a89c">Chemical</span><div><p class="font-semibold text-slate-800 text-sm">Chemical Sciences</p><p class="text-slate-400 text-xs">Properties of matter, changes &amp; materials</p></div></div>
+          <svg :class="expanded === 2 ? 'rotate-180' : ''" class="w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="expanded === 2" x-transition class="curriculum-body border-t border-slate-100">
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 pt-4 text-sm text-slate-600">
+            <li class="flex gap-2"><span class="text-mint">•</span> Properties of solids, liquids and gases</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Physical vs chemical changes</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Dissolving, mixing and separating materials</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Reversible and irreversible changes</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Everyday materials and their properties</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Introduction to atoms and elements (Yr 6)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="curriculum-card bg-white shadow-sm">
+        <button @click="expanded = expanded === 3 ? null : 3" class="curriculum-btn" :aria-expanded="expanded === 3">
+          <div class="flex items-center gap-3"><span class="text-xs font-bold text-white bg-teal px-2.5 py-1 rounded-md flex-shrink-0">Physical</span><div><p class="font-semibold text-slate-800 text-sm">Physical Sciences</p><p class="text-slate-400 text-xs">Forces, energy, light &amp; sound</p></div></div>
+          <svg :class="expanded === 3 ? 'rotate-180' : ''" class="w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="expanded === 3" x-transition class="curriculum-body border-t border-slate-100">
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 pt-4 text-sm text-slate-600">
+            <li class="flex gap-2"><span class="text-teal">•</span> Forces — push, pull, gravity, friction</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Light — reflection, refraction, colour</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Sound — vibration, pitch &amp; volume</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Electricity — circuits &amp; conductors (Yr 6)</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Energy types — heat, light, movement</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Machines &amp; simple mechanisms</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="curriculum-card bg-white shadow-sm">
+        <button @click="expanded = expanded === 4 ? null : 4" class="curriculum-btn" :aria-expanded="expanded === 4">
+          <div class="flex items-center gap-3"><span class="text-xs font-bold text-white bg-teal px-2.5 py-1 rounded-md flex-shrink-0">Earth &amp; Space</span><div><p class="font-semibold text-slate-800 text-sm">Earth and Space Sciences</p><p class="text-slate-400 text-xs">Seasons, weather, geology &amp; the solar system</p></div></div>
+          <svg :class="expanded === 4 ? 'rotate-180' : ''" class="w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="expanded === 4" x-transition class="curriculum-body border-t border-slate-100">
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 pt-4 text-sm text-slate-600">
+            <li class="flex gap-2"><span class="text-teal">•</span> Earth's surface — rocks, soil &amp; landforms</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Seasons &amp; why they happen</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Weather patterns &amp; the water cycle</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> The solar system — planets &amp; movements</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Day, night &amp; phases of the Moon</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Environment &amp; sustainability (Yr 5–6)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHO + FORMAT -->
+<section class="py-20 px-6" aria-label="Who this program suits">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-in-up">
+        <span class="section-badge mb-4 inline-block" style="color:#59a89c;background:rgba(89,168,156,0.10);border-color:rgba(89,168,156,0.25);">Who Is This For?</span>
+        <h2 class="font-display font-extrabold text-4xl text-white mb-6">Is This Program Right for Your Child?</h2>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3 text-white/60 text-sm leading-relaxed"><svg class="w-5 h-5 text-mint flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Primary students who love science and want to explore beyond their classroom curriculum</li>
+          <li class="flex items-start gap-3 text-white/60 text-sm leading-relaxed"><svg class="w-5 h-5 text-mint flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Students who want extra support or extension on topics covered at school</li>
+          <li class="flex items-start gap-3 text-white/60 text-sm leading-relaxed"><svg class="w-5 h-5 text-mint flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Families who want their child to build a strong science foundation before secondary school</li>
+          <li class="flex items-start gap-3 text-white/60 text-sm leading-relaxed"><svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Students aiming to feel prepared and confident starting Year 7 science</li>
+          <li class="flex items-start gap-3 text-white/60 text-sm leading-relaxed"><svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Curious young scientists who thrive in an encouraging, small-group environment</li>
+        </ul>
+      </div>
+      <div class="fade-in-up">
+        <div class="glass-card rounded-3xl p-8">
+          <h3 class="font-display font-bold text-white text-lg mb-5">Teaching Format Options</h3>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4"><div class="w-10 h-10 rounded-xl border flex items-center justify-center flex-shrink-0" style="background:rgba(89,168,156,0.15);border-color:rgba(89,168,156,0.25)"><svg class="w-5 h-5 text-mint" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0"/></svg></div><div><p class="font-semibold text-white text-sm mb-1">Small Group (max 6)</p><p class="text-white/45 text-xs leading-relaxed">Fun, collaborative weekly sessions where students explore science together and build scientific discussion skills.</p></div></div>
+            <div class="flex items-start gap-4"><div class="w-10 h-10 rounded-xl bg-teal/15 border border-teal/25 flex items-center justify-center flex-shrink-0"><svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></div><div><p class="font-semibold text-white text-sm mb-1">1-on-1 Tutoring</p><p class="text-white/45 text-xs leading-relaxed">Fully personalised to your child's school topics and pace of learning — ideal for extension or targeted support.</p></div></div>
+            <div class="flex items-start gap-4"><div class="w-10 h-10 rounded-xl bg-teal/10 border border-white/10 flex items-center justify-center flex-shrink-0"><svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div><div><p class="font-semibold text-white text-sm mb-1">Online Live</p><p class="text-white/45 text-xs leading-relaxed">Interactive online sessions for students anywhere in Victoria or Australia with shared digital tools.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY SCIMIND -->
+<section class="py-20 px-6 section-light" aria-label="Why SciMind is different">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12 fade-in-up"><span class="section-badge mb-4 inline-block">Our Difference</span><h2 class="section-title">Why Families Choose SciMind</h2><p class="section-subtitle max-w-xl mx-auto">Primary science should be exciting. We make sure it is.</p></div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 fade-in-up">
+      <div class="glass-card p-7 rounded-2xl"><div class="w-12 h-12 rounded-xl mb-4 flex items-center justify-center" style="background:rgba(89,168,156,0.10);border:1px solid rgba(89,168,156,0.20)"><svg class="w-6 h-6 text-mint" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div><h3 class="font-semibold text-slate-800 text-sm mb-2">Science-First Educators</h3><p class="text-slate-500 text-xs leading-relaxed">Our tutors genuinely love science and that enthusiasm is infectious. Students leave sessions wanting to know more.</p></div>
+      <div class="glass-card p-7 rounded-2xl"><div class="w-12 h-12 rounded-xl bg-teal/10 border border-teal/20 mb-4 flex items-center justify-center"><svg class="w-6 h-6 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064"/></svg></div><h3 class="font-semibold text-slate-800 text-sm mb-2">Inquiry-Based Learning</h3><p class="text-slate-500 text-xs leading-relaxed">We teach students to ask questions, test ideas and explain observations — building the habits of real scientists.</p></div>
+      <div class="glass-card p-7 rounded-2xl"><div class="w-12 h-12 rounded-xl mb-4 flex items-center justify-center" style="background:rgba(89,168,156,0.10);border:1px solid rgba(89,168,156,0.20)"><svg class="w-6 h-6 text-mint" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div><h3 class="font-semibold text-slate-800 text-sm mb-2">Year 7 Transition Ready</h3><p class="text-slate-500 text-xs leading-relaxed">From Year 4, we start building secondary science vocabulary and habits so students are genuinely prepared for Year 7.</p></div>
+      <div class="glass-card p-7 rounded-2xl"><div class="w-12 h-12 rounded-xl bg-teal/10 border border-teal/20 mb-4 flex items-center justify-center"><svg class="w-6 h-6 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div><h3 class="font-semibold text-slate-800 text-sm mb-2">Tailored Resources</h3><p class="text-slate-500 text-xs leading-relaxed">Students have access to age-appropriate learning materials, activities and science notes through our Learning Hub.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOMES -->
+<section class="py-20 px-6" aria-label="Learning outcomes">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-10 fade-in-up"><span class="section-badge mb-4 inline-block" style="color:#59a89c;background:rgba(89,168,156,0.10);border-color:rgba(89,168,156,0.25);">Learning Outcomes</span><h2 class="font-display font-extrabold text-4xl text-white mb-4">What Students Gain</h2></div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-3 max-w-4xl mx-auto fade-in-up">
+      <div class="tick-item text-white/60"><svg class="w-5 h-5 text-mint flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Genuine curiosity and enthusiasm for science</div>
+      <div class="tick-item text-white/60"><svg class="w-5 h-5 text-mint flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Strong scientific vocabulary for school work</div>
+      <div class="tick-item text-white/60"><svg class="w-5 h-5 text-mint flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Understanding of all four Australian Curriculum science strands</div>
+      <div class="tick-item text-white/60"><svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Ability to think like a scientist — observe, question, explain</div>
+      <div class="tick-item text-white/60"><svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Improved confidence in school science assessments</div>
+      <div class="tick-item text-white/60"><svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Readiness and confidence for Year 7 science</div>
+    </div>
+  </div>
+</section>
+
+<!-- SAMPLE MATERIALS -->
+<section class="py-20 px-6 section-grey" aria-label="Sample learning materials">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12 fade-in-up"><span class="section-badge mb-4 inline-block">Learning Hub</span><h2 class="section-title">Sample Learning Materials</h2><p class="section-subtitle max-w-lg mx-auto">A taste of the Year 4–6 resources available through our Learning Hub.</p></div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 fade-in-up">
+      <div class="glass-card p-6 rounded-2xl"><div class="w-10 h-10 rounded-xl mb-4 flex items-center justify-center" style="background:rgba(89,168,156,0.10);border:1px solid rgba(89,168,156,0.20)"><svg class="w-5 h-5 text-mint" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></div><h3 class="font-semibold text-slate-800 text-sm mb-2">Year 5 Ecosystems — Visual Notes</h3><p class="text-slate-500 text-xs leading-relaxed mb-4">Illustrated guides to food chains, food webs and habitat relationships — designed for primary learners.</p><a href="learning-hub.html" class="text-xs font-semibold text-mint hover:underline">View in Learning Hub →</a></div>
+      <div class="glass-card p-6 rounded-2xl"><div class="w-10 h-10 rounded-xl bg-teal/10 border border-teal/20 mb-4 flex items-center justify-center"><svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><h3 class="font-semibold text-slate-800 text-sm mb-2">Year 6 Physical Sciences — Activity Pack</h3><p class="text-slate-500 text-xs leading-relaxed mb-4">Forces, electricity and energy activities with real-world explanations and simple experiments to try at home.</p><a href="learning-hub.html" class="text-xs font-semibold text-teal hover:underline">View in Learning Hub →</a></div>
+      <div class="glass-card p-6 rounded-2xl"><div class="w-10 h-10 rounded-xl mb-4 flex items-center justify-center" style="background:rgba(89,168,156,0.10);border:1px solid rgba(89,168,156,0.20)"><svg class="w-5 h-5 text-mint" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></div><h3 class="font-semibold text-slate-800 text-sm mb-2">Year 6 Science — "Ready for Year 7" Checklist</h3><p class="text-slate-500 text-xs leading-relaxed mb-4">Key concepts and vocabulary students should know before starting secondary school science — with a self-assessment guide.</p><a href="learning-hub.html" class="text-xs font-semibold text-mint hover:underline">View in Learning Hub →</a></div>
+    </div>
+    <div class="text-center mt-8 fade-in-up"><a href="learning-hub.html" class="btn-secondary">Browse All Materials in the Learning Hub</a></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-20 px-6" aria-label="FAQ about Year 4-6 Science program">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-10 fade-in-up"><span class="section-badge mb-4 inline-block" style="color:#59a89c;background:rgba(89,168,156,0.10);border-color:rgba(89,168,156,0.25);">FAQ</span><h2 class="font-display font-extrabold text-4xl text-white mb-4">Year 4–6 Science Questions</h2></div>
+    <div class="space-y-3 fade-in-up" x-data="{ active: null }">
+      <div class="glass-card rounded-2xl overflow-hidden"><button @click="active = active === 1 ? null : 1" class="w-full flex items-center justify-between p-5 text-left gap-4"><span class="font-semibold text-white/90 text-sm">How is primary science tutoring different from secondary?</span><svg :class="active === 1 ? 'rotate-180' : ''" class="w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button><div x-show="active === 1" x-transition class="px-5 pb-5 text-white/55 text-sm leading-relaxed border-t border-white/5">Primary science is led by curiosity and exploration rather than exam preparation. We focus on building genuine understanding, strong scientific vocabulary and an investigative mindset — the foundations that make everything in secondary science easier.</div></div>
+      <div class="glass-card rounded-2xl overflow-hidden"><button @click="active = active === 2 ? null : 2" class="w-full flex items-center justify-between p-5 text-left gap-4"><span class="font-semibold text-white/90 text-sm">Are sessions hands-on or mostly theory?</span><svg :class="active === 2 ? 'rotate-180' : ''" class="w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button><div x-show="active === 2" x-transition class="px-5 pb-5 text-white/55 text-sm leading-relaxed border-t border-white/5">A mix of both. We explain concepts clearly, but they're always connected to real-world examples or interactive activities. For online sessions, we use diagrams, shared tools and virtual experiments to keep sessions engaging.</div></div>
+      <div class="glass-card rounded-2xl overflow-hidden"><button @click="active = active === 3 ? null : 3" class="w-full flex items-center justify-between p-5 text-left gap-4"><span class="font-semibold text-white/90 text-sm">Will sessions align to what my child is learning at school?</span><svg :class="active === 3 ? 'rotate-180' : ''" class="w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button><div x-show="active === 3" x-transition class="px-5 pb-5 text-white/55 text-sm leading-relaxed border-t border-white/5">In 1-on-1 sessions, we can tailor directly to school topics and upcoming assessments. Group sessions follow the Australian Curriculum scope, which aligns well with what primary school students are learning across most Victorian schools.</div></div>
+      <div class="glass-card rounded-2xl overflow-hidden"><button @click="active = active === 4 ? null : 4" class="w-full flex items-center justify-between p-5 text-left gap-4"><span class="font-semibold text-white/90 text-sm">How does this program prepare students for Year 7 science?</span><svg :class="active === 4 ? 'rotate-180' : ''" class="w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button><div x-show="active === 4" x-transition class="px-5 pb-5 text-white/55 text-sm leading-relaxed border-t border-white/5">Year 7 science can feel like a big jump — wider vocabulary, new labs and much more content. We specifically cover the core concepts, vocabulary and inquiry skills that Year 7 builds on. Students who complete our Year 4–6 program enter secondary science with confidence and a head start over their peers.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-16 px-6"><div class="max-w-5xl mx-auto fade-in-up"><div class="relative rounded-3xl p-12 md:p-16 text-center overflow-hidden" style="background:linear-gradient(135deg,rgba(89,168,156,0.15),rgba(11,129,162,0.10),rgba(0,58,125,0.18));border:1px solid rgba(89,168,156,0.28);"><div class="absolute inset-0 pointer-events-none rounded-3xl" style="background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(89,168,156,0.12),transparent);"></div><div class="relative z-10"><span class="section-badge mb-5 inline-block" style="color:#59a89c;background:rgba(89,168,156,0.10);border-color:rgba(89,168,156,0.25);">Start Today</span><h2 class="font-display font-extrabold text-4xl md:text-5xl text-white mb-4">Ready to Grow a Young Scientist?</h2><p class="text-white/55 max-w-xl mx-auto mb-8 leading-relaxed">Enquire to discuss year level, format, and timetabling for the Year 4–6 program.</p><div class="flex flex-col sm:flex-row gap-3 justify-center"><a href="enrol.html" class="btn-primary text-base px-8 py-3.5" style="background:linear-gradient(135deg,#59a89c,#0b81a2)"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Enrol Now</a><a href="programs.html" class="btn-secondary text-base px-8 py-3.5">View All Programs</a></div></div></div></div></section>
+
+<!-- FOOTER -->
+<footer class="bg-[#020d1a] border-t border-white/5 px-6 pt-14 pb-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+      <div class="md:col-span-2"><img src="../assets/images/H - White and Color.svg" alt="SciMind Education" class="h-10 w-auto mb-4 object-contain" onerror="this.style.display='none'"/><p class="text-white/40 text-sm leading-relaxed max-w-xs">Specialist science tutoring. Partnered with Vinsara Institute of Education.</p></div>
+      <nav><h4 class="font-semibold text-white/70 text-sm mb-4 uppercase tracking-wider">Programs</h4><ul class="space-y-2.5 text-sm"><li><a href="vce-biology.html"      class="text-white/40 hover:text-mint transition-colors">VCE Biology</a></li><li><a href="vce-chemistry.html"    class="text-white/40 hover:text-mint transition-colors">VCE Chemistry</a></li><li><a href="year7-10-science.html" class="text-white/40 hover:text-mint transition-colors">Year 7–10 Science</a></li><li><a href="year4-6-science.html"  class="text-mint font-medium">Year 4–6 Science</a></li></ul></nav>
+      <nav><h4 class="font-semibold text-white/70 text-sm mb-4 uppercase tracking-wider">Quick Links</h4><ul class="space-y-2.5 text-sm"><li><a href="../index.html"         class="text-white/40 hover:text-mint transition-colors">Home</a></li><li><a href="programs.html"         class="text-white/40 hover:text-mint transition-colors">All Programs</a></li><li><a href="learning-hub.html"     class="text-white/40 hover:text-mint transition-colors">Learning Hub</a></li><li><a href="enrol.html" class="text-white/40 hover:text-mint transition-colors">Enrol / Contact</a></li></ul></nav>
+    </div>
+    <div class="border-t border-white/5 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-white/30 text-xs"><p>© 2026 SciMind Education. All rights reserved.</p><p>In partnership with <a href="../index.html#partner" class="text-mint/60 hover:text-mint transition-colors">Vinsara Institute of Education</a></p></div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

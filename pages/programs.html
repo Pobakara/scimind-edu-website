@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- SEO -->
+  <title>Science Tutoring Programs | SciMind Education Melbourne</title>
+  <meta name="description" content="Explore SciMind Education's science tutoring programs for VCE Biology, VCE Chemistry, Year 7–10 and Year 4–6. Expert-led, small groups, in-centre and online across Melbourne."/>
+  <meta name="keywords" content="VCE Biology tutoring, VCE Chemistry tutoring, science tutor Melbourne, year 7 science tutor, VCE tutoring Melbourne"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.scimindeducation.com.au/programs"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Science Tutoring Programs | SciMind Education"/>
+  <meta property="og:description" content="VCE Biology, VCE Chemistry, Year 7–10 and Year 4–6 science tutoring. Small groups, 1-on-1, and online."/>
+  <meta property="og:url" content="https://www.scimindeducation.com.au/programs"/>
+  <meta property="og:site_name" content="SciMind Education"/>
+
+  <!-- JSON-LD: Organisation -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "SciMind Education",
+    "url": "https://www.scimindeducation.com.au",
+    "description": "Specialist science tutoring centre in Melbourne offering VCE Biology, VCE Chemistry, and general science programs.",
+    "address": { "@type": "PostalAddress", "addressRegion": "VIC", "addressCountry": "AU" }
+  }
+  </script>
+
+  <!-- Styles & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom.css?v=12"/>
+
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          navy:  { DEFAULT: '#003a7d', light: '#0050b0', dark: '#002558' },
+          teal:  { DEFAULT: '#0b81a2', light: '#0d9ac2', dark: '#086882' },
+          mint:  { DEFAULT: '#59a89c', light: '#6bbfb3', dark: '#448a7e' },
+        },
+        fontFamily: {
+          sans:    ['Inter', 'system-ui', 'sans-serif'],
+          display: ['Poppins', 'system-ui', 'sans-serif'],
+        },
+      }}
+    }
+  </script>
+
+  <style>
+    /* ── Light/grey section theming ── */
+    .section-light { background-color: #f8fafc !important; color: #1e293b !important; }
+    .section-grey  { background-color: #f1f5f9 !important; color: #1e293b !important; }
+    .section-light .section-title, .section-grey .section-title { color: #1e293b !important; }
+    .section-light .section-subtitle, .section-grey .section-subtitle { color: #64748b !important; }
+    .section-light .section-badge, .section-grey .section-badge {
+      color: #0b81a2 !important; background: rgba(11,129,162,0.09) !important; border-color: rgba(11,129,162,0.22) !important;
+    }
+    .section-light .glass-card, .section-grey .glass-card {
+      background: #ffffff !important; border: 1px solid #e2e8f0 !important;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06) !important; backdrop-filter: none !important;
+    }
+    .section-light .glass-card h3, .section-grey .glass-card h3 { color: #1e293b !important; }
+    .section-light .glass-card p, .section-grey .glass-card p { color: #64748b !important; }
+    /* ── Program summary cards ── */
+    .prog-summary-card {
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px; padding: 32px; transition: all 0.3s ease;
+      display: flex; flex-direction: column;
+    }
+    .prog-summary-card:hover {
+      background: rgba(255,255,255,0.07); border-color: rgba(11,129,162,0.4);
+      transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    /* ── Hero program mini-card ── */
+    .hero-prog-card {
+      border-radius: 16px; padding: 16px; border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.04); transition: all 0.2s; text-decoration: none; display: block;
+    }
+    .hero-prog-card:hover { background: rgba(255,255,255,0.08); border-color: rgba(11,129,162,0.35); transform: translateY(-2px); }
+    /* ── Quick jump pills ── */
+    .jump-pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 20px; border-radius: 9999px; font-size: 0.875rem; font-weight: 500;
+      border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.06);
+      color: rgba(255,255,255,0.75); transition: all 0.2s; text-decoration: none; cursor: pointer;
+    }
+    .jump-pill:hover { background: rgba(11,129,162,0.2); border-color: rgba(11,129,162,0.5); color: #fff; }
+    /* ── Format badge ── */
+    .fmt-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 3px 10px; border-radius: 9999px; font-size: 0.7rem; font-weight: 500;
+      border: 1px solid rgba(11,129,162,0.25); background: rgba(11,129,162,0.08); color: #0b81a2;
+    }
+    /* ── Compare table ── */
+    .cmp-table th { padding: 12px 16px; font-size: 0.7rem; text-transform: uppercase; letter-spacing: .08em; }
+    .cmp-table td { padding: 14px 16px; border-top: 1px solid #e2e8f0; font-size: 0.875rem; }
+    .cmp-table tr:hover td { background: rgba(11,129,162,0.04); }
+    /* ── Outcome tick ── */
+    .tick-item { display: flex; align-items: flex-start; gap: 10px; color: #64748b; font-size: 0.875rem; }
+    .tick-item svg { color: #0b81a2; flex-shrink: 0; margin-top: 2px; }
+  </style>
+</head>
+
+<body class="bg-[#020d1a] text-white font-sans antialiased overflow-x-hidden">
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  NAVBAR                              ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 scrolled" x-data="{ mobileOpen: false }">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <a href="../index.html" class="flex items-center" aria-label="SciMind Education – Home">
+      <img src="../assets/images/H - White and Color.svg" alt="SciMind Education" class="h-9 w-auto object-contain"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+      <div style="display:none" class="items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-teal to-mint flex items-center justify-center">
+          <span class="font-display font-extrabold text-sm text-white">S</span>
+        </div>
+        <span class="font-display font-bold text-white text-lg">SciMind</span>
+      </div>
+    </a>
+
+    <div class="hidden md:flex items-center gap-6">
+      <a href="../index.html"        class="text-white/70 hover:text-mint transition-colors text-sm font-medium">Home</a>
+      <a href="about.html"           class="text-white/70 hover:text-mint transition-colors text-sm font-medium">About</a>
+      <a href="programs.html"        class="text-mint text-sm font-medium">Programs</a>
+      <a href="learning-hub.html"    class="text-white/70 hover:text-mint transition-colors text-sm font-medium">Learning Hub</a>
+      <a href="../index.html#partner" class="text-white/70 hover:text-mint transition-colors text-sm font-medium">Partnership</a>
+      <a href="enrol.html" class="text-white/70 hover:text-mint transition-colors text-sm font-medium">Contact</a>
+    </div>
+
+    <a href="enrol.html" class="hidden md:inline-flex btn-primary text-sm px-5 py-2.5">
+      Enrol Now
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+    </a>
+
+    <button @click="mobileOpen = !mobileOpen" class="md:hidden p-2 rounded-lg text-white/70 hover:text-white">
+      <svg x-show="!mobileOpen" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <svg x-show="mobileOpen" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+  </div>
+
+  <div x-show="mobileOpen" x-transition class="md:hidden border-t border-white/5 bg-[#020d1a]/97 backdrop-blur-xl">
+    <div class="px-6 py-4 space-y-3 text-sm">
+      <a href="../index.html"        class="block text-white/70 hover:text-mint py-2 transition-colors">Home</a>
+      <a href="about.html"           class="block text-white/70 hover:text-mint py-2 transition-colors">About</a>
+      <a href="programs.html"        class="block text-mint py-2">Programs</a>
+      <a href="learning-hub.html"    class="block text-white/70 hover:text-mint py-2 transition-colors">Learning Hub</a>
+      <a href="../index.html#partner" class="block text-white/70 hover:text-mint py-2 transition-colors">Partnership</a>
+      <a href="enrol.html" class="block text-white/70 hover:text-mint py-2 transition-colors">Contact</a>
+      <a href="enrol.html" class="btn-primary w-full justify-center mt-2">Enrol Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  HERO                                ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<header class="relative pt-28 pb-20 px-6 overflow-hidden">
+  <div class="absolute inset-0 bg-hero-glow pointer-events-none"></div>
+  <div class="blob blob-1" style="opacity:.55"></div>
+  <div class="blob blob-2" style="opacity:.44"></div>
+  <div class="absolute inset-0 grid-overlay opacity-10 pointer-events-none"></div>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="Breadcrumb" class="relative z-10 max-w-7xl mx-auto mb-8">
+    <ol class="flex items-center gap-2 text-sm text-white/40">
+      <li><a href="../index.html" class="hover:text-mint transition-colors">Home</a></li>
+      <li><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></li>
+      <li class="text-white/70" aria-current="page">Programs</li>
+    </ol>
+  </nav>
+
+  <div class="relative z-10 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Left: text -->
+      <div>
+        <span class="section-badge mb-5 inline-block fade-in-up">Science Tutoring Melbourne</span>
+        <h1 class="font-display font-extrabold text-5xl md:text-6xl xl:text-7xl leading-[1.06] mb-6 fade-in-up">
+          Programs Built for<br/><span class="gradient-text">Science Success.</span>
+        </h1>
+        <p class="text-white/55 text-lg md:text-xl mb-8 leading-relaxed fade-in-up">
+          From primary school curiosity to VCE exam mastery — specialist science tutoring for every stage. Small groups, 1-on-1, and online options available.
+        </p>
+        <!-- Quick-jump pills -->
+        <div class="flex flex-wrap gap-3 mb-8 fade-in-up" role="navigation" aria-label="Program quick links">
+          <a href="#vce-biology"   class="jump-pill">🧬 VCE Biology</a>
+          <a href="#vce-chemistry" class="jump-pill">⚗️ VCE Chemistry</a>
+          <a href="#yr7-10"        class="jump-pill">🔬 Year 7–10</a>
+          <a href="#yr4-6"         class="jump-pill">⭐ Year 4–6</a>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 fade-in-up">
+          <a href="#programs" class="btn-primary text-base px-8 py-3.5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            Explore Programs
+          </a>
+          <a href="enrol.html" class="btn-secondary text-base px-8 py-3.5">Get in Touch</a>
+        </div>
+      </div>
+      <!-- Right: image collage (lg+ only) -->
+      <div class="hidden lg:block relative fade-in-up" style="height:420px;">
+        <!-- Main large image -->
+        <div class="absolute inset-0 rounded-3xl overflow-hidden border border-white/10 shadow-2xl" style="right:0;bottom:30px;top:0;left:20px;">
+          <img src="https://picsum.photos/seed/scimind-lab/700/500"
+               alt="Students in science lab" class="w-full h-full object-cover"/>
+        </div>
+        <!-- Floating secondary image -->
+        <div class="absolute rounded-2xl overflow-hidden border border-white/15 shadow-xl" style="width:190px;height:140px;bottom:0;left:0;z-index:10;">
+          <img src="https://picsum.photos/seed/scimind-micro/400/280"
+               alt="Science microscope" class="w-full h-full object-cover"/>
+        </div>
+        <!-- Floating stat badge top-right -->
+        <div class="absolute top-4 right-0 z-10 flex items-center gap-3 px-4 py-3 rounded-2xl"
+             style="background:rgba(2,13,26,0.75);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.12);">
+          <div class="w-8 h-8 rounded-xl bg-teal/20 border border-teal/30 flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-teal" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </div>
+          <div>
+            <p class="text-white font-bold text-sm leading-none mb-0.5">Max 6 per group</p>
+            <p class="text-white/40 text-xs">Individual attention</p>
+          </div>
+        </div>
+        <!-- Floating VCAA badge bottom-right -->
+        <div class="absolute bottom-10 right-2 z-10 px-3 py-2 rounded-xl flex items-center gap-2"
+             style="background:rgba(2,13,26,0.75);backdrop-filter:blur(12px);border:1px solid rgba(89,168,156,0.25);">
+          <div class="w-2 h-2 rounded-full bg-mint animate-pulse"></div>
+          <span class="text-mint text-xs font-semibold">VCAA &amp; Curriculum Aligned</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  PROGRAM SUMMARY CARDS              ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<section id="programs" class="py-20 px-6" aria-label="Program summaries">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12 fade-in-up">
+      <span class="section-badge mb-4 inline-block">All Programs</span>
+      <h2 class="font-display font-extrabold text-4xl md:text-5xl text-white mb-4">Find the Right Program</h2>
+      <p class="text-white/50 max-w-xl mx-auto leading-relaxed">Each program is curriculum-aligned, taught by expert science educators, and available in-centre or online.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+
+      <!-- VCE Biology -->
+      <article id="vce-biology" class="prog-summary-card fade-in-up" aria-label="VCE Biology program">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal/30 to-teal/10 flex items-center justify-center mb-5">
+          <svg class="w-7 h-7 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+        </div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xs font-semibold text-teal bg-teal/10 border border-teal/20 px-2.5 py-1 rounded-full">VCE · Units 1–4</span>
+          <span class="text-xs font-semibold text-white/40 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">Yr 11–12</span>
+        </div>
+        <h3 class="font-display font-bold text-xl mb-3">VCE Biology</h3>
+        <p class="text-white/50 text-sm leading-relaxed flex-1 mb-6">Comprehensive Unit 1–4 preparation focusing on conceptual mastery, SAC preparation, and VCAA exam strategy.</p>
+        <div class="flex flex-wrap gap-1.5 mb-6">
+          <span class="fmt-badge">Small Group</span>
+          <span class="fmt-badge">1-on-1</span>
+          <span class="fmt-badge">Online</span>
+        </div>
+        <a href="vce-biology.html" class="card-link mt-auto">
+          View Program →
+        </a>
+      </article>
+
+      <!-- VCE Chemistry -->
+      <article id="vce-chemistry" class="prog-summary-card fade-in-up" aria-label="VCE Chemistry program" style="--delay:80ms">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-mint/30 to-mint/10 flex items-center justify-center mb-5">
+          <svg class="w-7 h-7 text-mint" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+        </div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xs font-semibold text-mint bg-mint/10 border border-mint/20 px-2.5 py-1 rounded-full">VCE · Units 1–4</span>
+          <span class="text-xs font-semibold text-white/40 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">Yr 11–12</span>
+        </div>
+        <h3 class="font-display font-bold text-xl mb-3">VCE Chemistry</h3>
+        <p class="text-white/50 text-sm leading-relaxed flex-1 mb-6">Deep conceptual understanding of chemical systems, supported by calculation practice and exam-focused SAC preparation.</p>
+        <div class="flex flex-wrap gap-1.5 mb-6">
+          <span class="fmt-badge">Small Group</span>
+          <span class="fmt-badge">1-on-1</span>
+          <span class="fmt-badge">Online</span>
+        </div>
+        <a href="vce-chemistry.html" class="card-link mt-auto">View Program →</a>
+      </article>
+
+      <!-- Year 7–10 -->
+      <article id="yr7-10" class="prog-summary-card fade-in-up" aria-label="Year 7 to 10 Science program" style="--delay:160ms">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal/20 to-navy/40 flex items-center justify-center mb-5">
+          <svg class="w-7 h-7 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xs font-semibold text-teal bg-teal/10 border border-teal/20 px-2.5 py-1 rounded-full">Australian Curriculum</span>
+          <span class="text-xs font-semibold text-white/40 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">Yr 7–10</span>
+        </div>
+        <h3 class="font-display font-bold text-xl mb-3">Year 7–10 Science</h3>
+        <p class="text-white/50 text-sm leading-relaxed flex-1 mb-6">All four science strands covered with a focus on inquiry skills, school results, and building a strong VCE foundation.</p>
+        <div class="flex flex-wrap gap-1.5 mb-6">
+          <span class="fmt-badge">Small Group</span>
+          <span class="fmt-badge">1-on-1</span>
+          <span class="fmt-badge">Online</span>
+        </div>
+        <a href="year7-10-science.html" class="card-link mt-auto">View Program →</a>
+      </article>
+
+      <!-- Year 4–6 -->
+      <article id="yr4-6" class="prog-summary-card fade-in-up" aria-label="Year 4 to 6 Science program" style="--delay:240ms">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-mint/20 to-teal/10 flex items-center justify-center mb-5">
+          <svg class="w-7 h-7 text-mint" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+        </div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xs font-semibold text-mint bg-mint/10 border border-mint/20 px-2.5 py-1 rounded-full">Primary Science</span>
+          <span class="text-xs font-semibold text-white/40 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">Yr 4–6</span>
+        </div>
+        <h3 class="font-display font-bold text-xl mb-3">Year 4–6 Science</h3>
+        <p class="text-white/50 text-sm leading-relaxed flex-1 mb-6">Curiosity-first science learning across all primary strands. Hands-on inquiry to build lasting scientific thinking.</p>
+        <div class="flex flex-wrap gap-1.5 mb-6">
+          <span class="fmt-badge">Small Group</span>
+          <span class="fmt-badge">1-on-1</span>
+          <span class="fmt-badge">Online</span>
+        </div>
+        <a href="year4-6-science.html" class="card-link mt-auto">View Program →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  TEACHING APPROACH                  ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<section class="py-20 px-6 section-light" aria-label="Teaching approach">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12 fade-in-up">
+      <span class="section-badge mb-4 inline-block">How We Teach</span>
+      <h2 class="section-title">Teaching That Adapts to Every Student</h2>
+      <p class="section-subtitle max-w-xl mx-auto">Choose the format that suits you best. All formats deliver the same expert-level science teaching.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 fade-in-up">
+
+      <div class="glass-card p-8 rounded-3xl text-center">
+        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-teal/20 to-teal/5 flex items-center justify-center mx-auto mb-5 border border-teal/20">
+          <svg class="w-8 h-8 text-teal" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0"/></svg>
+        </div>
+        <h3 class="font-display font-bold text-xl mb-3 text-slate-800">Small Group Classes</h3>
+        <p class="text-slate-600 text-sm leading-relaxed mb-4">Maximum 6 students per class to ensure focused, discussion-based learning. Every student gets direct attention every session.</p>
+        <span class="text-xs font-semibold text-teal bg-teal/10 border border-teal/20 px-3 py-1 rounded-full">Max 6 students</span>
+      </div>
+
+      <div class="glass-card p-8 rounded-3xl text-center">
+        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-mint/20 to-mint/5 flex items-center justify-center mx-auto mb-5 border border-mint/20">
+          <svg class="w-8 h-8 text-mint" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+        </div>
+        <h3 class="font-display font-bold text-xl mb-3 text-slate-800">1-on-1 Tutoring</h3>
+        <p class="text-slate-600 text-sm leading-relaxed mb-4">Fully personalised sessions built around the student's exact school program, SAC schedule, and learning gaps.</p>
+        <span class="text-xs font-semibold text-mint bg-mint/10 border border-mint/20 px-3 py-1 rounded-full">Fully personalised</span>
+      </div>
+
+      <div class="glass-card p-8 rounded-3xl text-center">
+        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-teal/15 to-navy/30 flex items-center justify-center mx-auto mb-5 border border-white/10">
+          <svg class="w-8 h-8 text-teal" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <h3 class="font-display font-bold text-xl mb-3 text-slate-800">Online Learning</h3>
+        <p class="text-slate-600 text-sm leading-relaxed mb-4">Live interactive classes with shared whiteboards and real-time annotation. Available anywhere in Australia.</p>
+        <span class="text-xs font-semibold text-teal bg-teal/10 border border-teal/20 px-3 py-1 rounded-full">Anywhere in Australia</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  COMPARISON TABLE                   ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<section class="py-20 px-6 section-grey" aria-label="Program comparison">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-10 fade-in-up">
+      <span class="section-badge mb-4 inline-block">At a Glance</span>
+      <h2 class="section-title">Program Comparison</h2>
+      <p class="section-subtitle max-w-lg mx-auto">Compare all four programs to find the best fit for your student.</p>
+    </div>
+
+    <div class="fade-in-up overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
+      <table class="cmp-table w-full" role="table">
+        <thead class="bg-slate-50 border-b border-slate-200">
+          <tr>
+            <th class="text-left text-slate-500 font-semibold">Program</th>
+            <th class="text-left text-slate-500 font-semibold">Year Level</th>
+            <th class="text-left text-slate-500 font-semibold">Format</th>
+            <th class="text-left text-slate-500 font-semibold">Focus</th>
+            <th class="text-left text-slate-500 font-semibold">Outcome</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="vce-biology.html" class="font-semibold text-teal hover:underline">VCE Biology</a></td>
+            <td class="text-slate-600">Yr 11–12</td>
+            <td class="text-slate-600">Group / 1-on-1 / Online</td>
+            <td class="text-slate-600">VCAA Units 1–4, SAC &amp; Exam</td>
+            <td class="text-slate-600">Strong study scores &amp; exam confidence</td>
+          </tr>
+          <tr>
+            <td><a href="vce-chemistry.html" class="font-semibold text-mint hover:underline">VCE Chemistry</a></td>
+            <td class="text-slate-600">Yr 11–12</td>
+            <td class="text-slate-600">Group / 1-on-1 / Online</td>
+            <td class="text-slate-600">VCAA Units 1–4, SAC &amp; Exam</td>
+            <td class="text-slate-600">Conceptual mastery &amp; calculation skills</td>
+          </tr>
+          <tr>
+            <td><a href="year7-10-science.html" class="font-semibold text-teal hover:underline">Year 7–10 Science</a></td>
+            <td class="text-slate-600">Yr 7–10</td>
+            <td class="text-slate-600">Group / 1-on-1 / Online</td>
+            <td class="text-slate-600">Australian Curriculum, all strands</td>
+            <td class="text-slate-600">Improved grades &amp; VCE readiness</td>
+          </tr>
+          <tr>
+            <td><a href="year4-6-science.html" class="font-semibold text-mint hover:underline">Year 4–6 Science</a></td>
+            <td class="text-slate-600">Yr 4–6</td>
+            <td class="text-slate-600">Group / 1-on-1 / Online</td>
+            <td class="text-slate-600">Primary Curriculum, inquiry skills</td>
+            <td class="text-slate-600">Scientific thinking &amp; Year 7 readiness</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  FAQ — Alpine.js accordion          ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<section class="py-20 px-6" aria-label="Frequently asked questions">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-10 fade-in-up">
+      <span class="section-badge mb-4 inline-block">FAQ</span>
+      <h2 class="font-display font-extrabold text-4xl text-white mb-4">Frequently Asked Questions</h2>
+      <p class="text-white/50 leading-relaxed">Everything families want to know before enrolling.</p>
+    </div>
+
+    <div class="space-y-3 fade-in-up" x-data="{ active: null }">
+
+      <div class="glass-card rounded-2xl overflow-hidden">
+        <button @click="active = active === 1 ? null : 1" class="w-full flex items-center justify-between p-5 text-left gap-4" :aria-expanded="active === 1">
+          <span class="font-semibold text-white/90 text-sm">How many students are in each class?</span>
+          <svg :class="active === 1 ? 'rotate-180' : ''" class="w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="active === 1" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-end="opacity-0 -translate-y-2" class="px-5 pb-5 text-white/55 text-sm leading-relaxed border-t border-white/5">
+          Small group classes have a maximum of 6 students. This ensures every student receives direct feedback and individual attention during each session. 1-on-1 tutoring is also available for students who prefer a fully personalised experience.
+        </div>
+      </div>
+
+      <div class="glass-card rounded-2xl overflow-hidden">
+        <button @click="active = active === 2 ? null : 2" class="w-full flex items-center justify-between p-5 text-left gap-4" :aria-expanded="active === 2">
+          <span class="font-semibold text-white/90 text-sm">Do you offer trial classes?</span>
+          <svg :class="active === 2 ? 'rotate-180' : ''" class="w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="active === 2" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-end="opacity-0 -translate-y-2" class="px-5 pb-5 text-white/55 text-sm leading-relaxed border-t border-white/5">
+          Yes. We offer a trial session for new students across all programs. It gives your child a chance to experience the teaching approach and class environment before committing to regular enrolment. <a href="enrol.html" class="text-teal hover:underline">Contact us</a> to arrange one.
+        </div>
+      </div>
+
+      <div class="glass-card rounded-2xl overflow-hidden">
+        <button @click="active = active === 3 ? null : 3" class="w-full flex items-center justify-between p-5 text-left gap-4" :aria-expanded="active === 3">
+          <span class="font-semibold text-white/90 text-sm">Are sessions online or in person?</span>
+          <svg :class="active === 3 ? 'rotate-180' : ''" class="w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="active === 3" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-end="opacity-0 -translate-y-2" class="px-5 pb-5 text-white/55 text-sm leading-relaxed border-t border-white/5">
+          Both. In-centre sessions are held at our Melbourne location in partnership with Vinsara Institute of Education. Online sessions are delivered live via video call with shared digital whiteboards — same quality, complete flexibility. All programs support both formats.
+        </div>
+      </div>
+
+      <div class="glass-card rounded-2xl overflow-hidden">
+        <button @click="active = active === 4 ? null : 4" class="w-full flex items-center justify-between p-5 text-left gap-4" :aria-expanded="active === 4">
+          <span class="font-semibold text-white/90 text-sm">How do students enrol?</span>
+          <svg :class="active === 4 ? 'rotate-180' : ''" class="w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="active === 4" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-end="opacity-0 -translate-y-2" class="px-5 pb-5 text-white/55 text-sm leading-relaxed border-t border-white/5">
+          Submit an enrolment enquiry via our contact form. Our partner, Vinsara Institute of Education, will follow up with timetable options, current fees, and everything you need to get started. <a href="enrol.html" class="text-teal hover:underline">Enquire now →</a>
+        </div>
+      </div>
+
+      <div class="glass-card rounded-2xl overflow-hidden">
+        <button @click="active = active === 5 ? null : 5" class="w-full flex items-center justify-between p-5 text-left gap-4" :aria-expanded="active === 5">
+          <span class="font-semibold text-white/90 text-sm">What year levels do you teach?</span>
+          <svg :class="active === 5 ? 'rotate-180' : ''" class="w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="active === 5" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-end="opacity-0 -translate-y-2" class="px-5 pb-5 text-white/55 text-sm leading-relaxed border-t border-white/5">
+          We teach Year 4 through to Year 12 VCE. Our specialist programs cover: Year 4–6 (Primary Science), Year 7–10 (General Science), and VCE Biology &amp; Chemistry Units 1–4 (Years 11–12).
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  CTA BANNER                         ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<section class="py-16 px-6">
+  <div class="max-w-5xl mx-auto fade-in-up">
+    <div class="relative rounded-3xl p-12 md:p-16 text-center overflow-hidden" style="background:linear-gradient(135deg,rgba(11,129,162,0.18),rgba(89,168,156,0.10),rgba(0,58,125,0.20));border:1px solid rgba(11,129,162,0.28);">
+      <div class="absolute inset-0 pointer-events-none rounded-3xl" style="background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(11,129,162,0.15),transparent);"></div>
+      <div class="relative z-10">
+        <span class="section-badge mb-5 inline-block">Get Started Today</span>
+        <h2 class="font-display font-extrabold text-4xl md:text-5xl text-white mb-4">Ready to Excel in Science?</h2>
+        <p class="text-white/55 max-w-xl mx-auto mb-8 leading-relaxed">Send an enrolment enquiry and we will match your student to the right program, format, and timetable.</p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="enrol.html" class="btn-primary text-base px-8 py-3.5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Enrol Now
+          </a>
+          <a href="enrol.html" class="btn-secondary text-base px-8 py-3.5">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  FOOTER                             ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<footer class="bg-[#020d1a] border-t border-white/5 px-6 pt-14 pb-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+      <div class="md:col-span-2">
+        <img src="../assets/images/H - White and Color.svg" alt="SciMind Education" class="h-10 w-auto mb-4 object-contain"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+        <div style="display:none" class="items-center gap-2 mb-4">
+          <span class="font-display font-bold text-white text-xl">SciMind Education</span>
+        </div>
+        <p class="text-white/40 text-sm leading-relaxed max-w-xs">Specialist science tutoring for VCE and secondary students across Melbourne. Partnered with Vinsara Institute of Education.</p>
+      </div>
+      <nav aria-label="Programs footer links">
+        <h4 class="font-semibold text-white/70 text-sm mb-4 uppercase tracking-wider">Programs</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="vce-biology.html"       class="text-white/40 hover:text-mint transition-colors">VCE Biology</a></li>
+          <li><a href="vce-chemistry.html"     class="text-white/40 hover:text-mint transition-colors">VCE Chemistry</a></li>
+          <li><a href="year7-10-science.html"  class="text-white/40 hover:text-mint transition-colors">Year 7–10 Science</a></li>
+          <li><a href="year4-6-science.html"   class="text-white/40 hover:text-mint transition-colors">Year 4–6 Science</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Site footer links">
+        <h4 class="font-semibold text-white/70 text-sm mb-4 uppercase tracking-wider">Quick Links</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="../index.html"            class="text-white/40 hover:text-mint transition-colors">Home</a></li>
+          <li><a href="learning-hub.html"        class="text-white/40 hover:text-mint transition-colors">Learning Hub</a></li>
+          <li><a href="../index.html#partner"    class="text-white/40 hover:text-mint transition-colors">Partnership</a></li>
+          <li><a href="enrol.html"    class="text-white/40 hover:text-mint transition-colors">Enrol / Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="border-t border-white/5 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-white/30 text-xs">
+      <p>© 2026 SciMind Education. All rights reserved.</p>
+      <p>In partnership with <a href="../index.html#partner" class="text-mint/60 hover:text-mint transition-colors">Vinsara Institute of Education</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

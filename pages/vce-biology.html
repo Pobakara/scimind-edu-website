@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- SEO -->
+  <title>VCE Biology Tutoring | Units 1–4 Melbourne | SciMind Education</title>
+  <meta name="description" content="Expert VCE Biology tutoring for Units 1–4. Small groups, 1-on-1 and online. Cellular biology, genetics, biochemistry, immunity and evolution — VCAA aligned."/>
+  <meta name="keywords" content="VCE Biology tutor Melbourne, VCE Biology Units 1-4, VCE Biology SAC preparation, biology tutoring Melbourne"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.scimindeducation.com.au/programs/vce-biology"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="VCE Biology Tutoring Melbourne | SciMind Education"/>
+  <meta property="og:description" content="VCAA-aligned VCE Biology tutoring — Units 1–4, SAC prep, and exam strategy. Small groups, max 6 students."/>
+  <meta property="og:url" content="https://www.scimindeducation.com.au/programs/vce-biology"/>
+
+  <!-- JSON-LD Course Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "VCE Biology Tutoring Program",
+    "description": "Comprehensive VCAA-aligned tutoring for VCE Biology Units 1–4 covering cellular biology, genetics, biochemistry, immunity and evolution.",
+    "provider": {
+      "@type": "EducationalOrganization",
+      "name": "SciMind Education",
+      "url": "https://www.scimindeducation.com.au"
+    },
+    "educationalLevel": "Year 11–12",
+    "inLanguage": "en-AU",
+    "isAccessibleForFree": false,
+    "courseCode": "VCE-BIO-1234",
+    "hasCourseInstance": {
+      "@type": "CourseInstance",
+      "courseMode": ["onsite", "online"],
+      "courseWorkload": "PT1H30M"
+    }
+  }
+  </script>
+
+  <!-- Styles & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom.css?v=12"/>
+
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          navy:  { DEFAULT: '#003a7d', light: '#0050b0', dark: '#002558' },
+          teal:  { DEFAULT: '#0b81a2', light: '#0d9ac2', dark: '#086882' },
+          mint:  { DEFAULT: '#59a89c', light: '#6bbfb3', dark: '#448a7e' },
+        },
+        fontFamily: {
+          sans:    ['Inter', 'system-ui', 'sans-serif'],
+          display: ['Poppins', 'system-ui', 'sans-serif'],
+        },
+      }}
+    }
+  </script>
+
+  <style>
+    .section-light { background-color: #f8fafc !important; color: #1e293b !important; }
+    .section-grey  { background-color: #f1f5f9 !important; color: #1e293b !important; }
+    .section-light .section-title, .section-grey .section-title { color: #1e293b !important; }
+    .section-light .section-subtitle, .section-grey .section-subtitle { color: #64748b !important; }
+    .section-light .section-badge, .section-grey .section-badge {
+      color: #0b81a2 !important; background: rgba(11,129,162,0.09) !important; border-color: rgba(11,129,162,0.22) !important;
+    }
+    .section-light .glass-card, .section-grey .glass-card {
+      background: #ffffff !important; border: 1px solid #e2e8f0 !important;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06) !important; backdrop-filter: none !important;
+    }
+    .section-light .glass-card h3, .section-grey .glass-card h3 { color: #1e293b !important; }
+    .section-light .glass-card p, .section-grey .glass-card p { color: #64748b !important; }
+    /* Journey timeline */
+    .journey-step {
+      position: relative; text-align: center;
+      flex: 1; padding: 0 8px;
+    }
+    .journey-step::before {
+      content: ''; position: absolute; top: 24px; left: calc(50% + 28px);
+      right: calc(-50% + 28px); height: 2px;
+      background: linear-gradient(to right, rgba(11,129,162,0.5), rgba(89,168,156,0.3));
+    }
+    .journey-step:last-child::before { display: none; }
+    .journey-icon {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: rgba(11,129,162,0.15); border: 2px solid rgba(11,129,162,0.4);
+      display: flex; align-items: center; justify-content: center; margin: 0 auto 12px;
+    }
+    /* Curriculum card */
+    .curriculum-card { border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.07); }
+    .curriculum-btn { width: 100%; display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 20px; text-align: left; gap: 12px; background: rgba(255,255,255,0.04); }
+    .curriculum-btn:hover { background: rgba(255,255,255,0.07); }
+    .curriculum-body { padding: 0 20px 18px; }
+    /* Tick list */
+    .tick-item { display: flex; align-items: flex-start; gap: 8px; font-size: 0.875rem; color: #64748b; }
+    .tick-item .tick { flex-shrink: 0; color: #0b81a2; margin-top: 2px; }
+    /* Stats tile */
+    .stat-tile { text-align: center; padding: 20px 12px; border: 1px solid rgba(11,129,162,0.2);
+      border-radius: 12px; background: rgba(11,129,162,0.05); }
+  </style>
+</head>
+
+<body class="bg-[#020d1a] text-white font-sans antialiased overflow-x-hidden">
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  NAVBAR                              ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 scrolled" x-data="{ mobileOpen: false }">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="../index.html" class="flex items-center" aria-label="SciMind Education - Home">
+      <img src="../assets/images/H - White and Color.svg" alt="SciMind Education" class="h-9 w-auto object-contain"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+      <div style="display:none" class="items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-teal to-mint flex items-center justify-center"><span class="font-display font-extrabold text-sm text-white">S</span></div>
+        <span class="font-display font-bold text-white text-lg">SciMind</span>
+      </div>
+    </a>
+    <div class="hidden md:flex items-center gap-6">
+      <a href="../index.html"         class="text-white/70 hover:text-mint transition-colors text-sm font-medium">Home</a>
+      <a href="about.html"            class="text-white/70 hover:text-mint transition-colors text-sm font-medium">About</a>
+      <a href="programs.html"         class="text-mint text-sm font-medium">Programs</a>
+      <a href="learning-hub.html"     class="text-white/70 hover:text-mint transition-colors text-sm font-medium">Learning Hub</a>
+      <a href="../index.html#partner" class="text-white/70 hover:text-mint transition-colors text-sm font-medium">Partnership</a>
+      <a href="enrol.html" class="text-white/70 hover:text-mint transition-colors text-sm font-medium">Contact</a>
+    </div>
+    <a href="enrol.html" class="hidden md:inline-flex btn-primary text-sm px-5 py-2.5">
+      Enrol Now
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+    </a>
+    <button @click="mobileOpen = !mobileOpen" class="md:hidden p-2 rounded-lg text-white/70">
+      <svg x-show="!mobileOpen" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <svg x-show="mobileOpen" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div x-show="mobileOpen" x-transition class="md:hidden border-t border-white/5 bg-[#020d1a]/97 backdrop-blur-xl">
+    <div class="px-6 py-4 space-y-3 text-sm">
+      <a href="../index.html"         class="block text-white/70 hover:text-mint py-2 transition-colors">Home</a>
+      <a href="about.html"            class="block text-white/70 hover:text-mint py-2 transition-colors">About</a>
+      <a href="programs.html"         class="block text-mint py-2">Programs</a>
+      <a href="learning-hub.html"     class="block text-white/70 hover:text-mint py-2 transition-colors">Learning Hub</a>
+      <a href="../index.html#partner" class="block text-white/70 hover:text-mint py-2 transition-colors">Partnership</a>
+      <a href="enrol.html" class="block text-white/70 hover:text-mint py-2 transition-colors">Contact</a>
+      <a href="enrol.html" class="btn-primary w-full justify-center mt-2">Enrol Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  HERO                                ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<header class="relative pt-28 pb-20 px-6 overflow-hidden">
+  <div class="absolute inset-0 bg-hero-glow pointer-events-none"></div>
+  <div class="blob blob-1" style="opacity:.55"></div>
+  <div class="blob blob-2" style="opacity:.35"></div>
+  <div class="absolute inset-0 grid-overlay opacity-10 pointer-events-none"></div>
+
+  <nav aria-label="Breadcrumb" class="relative z-10 max-w-7xl mx-auto mb-8">
+    <ol class="flex items-center gap-2 text-sm text-white/40">
+      <li><a href="../index.html" class="hover:text-mint transition-colors">Home</a></li>
+      <li><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></li>
+      <li><a href="programs.html" class="hover:text-mint transition-colors">Programs</a></li>
+      <li><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></li>
+      <li class="text-white/70" aria-current="page">VCE Biology</li>
+    </ol>
+  </nav>
+
+  <div class="relative z-10 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="section-badge mb-5 inline-block fade-in-up">VCE · Units 1–4 · VCAA Aligned</span>
+        <h1 class="font-display font-extrabold text-5xl md:text-6xl xl:text-7xl leading-[1.06] mb-6 fade-in-up">
+          VCE Biology<br/><span class="gradient-text">Tutoring.</span>
+        </h1>
+        <p class="text-white/55 text-lg md:text-xl mb-8 leading-relaxed fade-in-up">
+          Expert, VCAA-aligned tutoring for Units 1–4. Build deep understanding across cellular biology, genetics, biochemistry, immunity and evolution — with SAC and exam preparation built in.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 fade-in-up">
+          <a href="enrol.html" class="btn-primary text-base px-8 py-3.5">
+            Enrol in This Program
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+          <a href="#curriculum" class="btn-secondary text-base px-8 py-3.5">See Curriculum</a>
+        </div>
+      </div>
+      <div class="hidden lg:flex flex-col gap-4 fade-in-up">
+        <div class="glass-card rounded-3xl p-7 border border-teal/25">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 rounded-xl bg-teal/20 border border-teal/30 flex items-center justify-center">
+              <svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </div>
+            <div><p class="font-semibold text-white text-sm">VCE Biology</p><p class="text-white/40 text-xs">Units 1–4 · VCAA Aligned</p></div>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span class="text-xs px-3 py-1 rounded-full bg-teal/15 border border-teal/25 text-teal font-medium">Cellular Biology</span>
+            <span class="text-xs px-3 py-1 rounded-full bg-teal/15 border border-teal/25 text-teal font-medium">Genetics</span>
+            <span class="text-xs px-3 py-1 rounded-full bg-mint/15 border border-mint/25 text-mint font-medium">Biochemistry</span>
+            <span class="text-xs px-3 py-1 rounded-full bg-mint/15 border border-mint/25 text-mint font-medium">Immunity</span>
+            <span class="text-xs px-3 py-1 rounded-full bg-white/8 border border-white/15 text-white/55 font-medium">Evolution</span>
+          </div>
+          <div class="grid grid-cols-3 gap-2">
+            <div class="text-center p-3 rounded-xl bg-white/5 border border-white/8"><p class="font-bold text-teal text-base leading-none mb-1">Max 6</p><p class="text-white/35 text-[10px]">Group size</p></div>
+            <div class="text-center p-3 rounded-xl bg-white/5 border border-white/8"><p class="font-bold text-white text-base leading-none mb-1">90 min</p><p class="text-white/35 text-[10px]">Per session</p></div>
+            <div class="text-center p-3 rounded-xl bg-white/5 border border-white/8"><p class="font-bold text-mint text-base leading-none mb-1">Yr 11–12</p><p class="text-white/35 text-[10px]">Year level</p></div>
+          </div>
+        </div>
+        <div class="glass-card rounded-2xl p-4 flex items-center justify-between border border-white/8">
+          <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-teal" style="box-shadow:0 0 6px #0b81a2"></div><span class="text-white/60 text-sm">Enrolling now for 2026</span></div>
+          <span class="text-xs px-2.5 py-1 rounded-full bg-teal/20 text-teal border border-teal/30 font-medium">VCAA Aligned</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  OVERVIEW (2-col)                   ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<section class="py-16 px-6 section-light" aria-label="Program overview">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <div class="fade-in-up">
+        <span class="section-badge mb-4 inline-block">About This Program</span>
+        <h2 class="section-title mb-4">Built for VCE Biology Success</h2>
+        <p class="text-slate-600 leading-relaxed mb-4">SciMind's VCE Biology program provides the structured, expert teaching that students need to thrive in one of VCE's most demanding science subjects. Each session connects core biological concepts — from cellular mechanisms to evolutionary theory — through a lens of genuine scientific understanding rather than rote learning.</p>
+        <p class="text-slate-600 leading-relaxed mb-6">We align every session to VCAA's unit outcomes, with targeted SAC preparation, past exam question analysis, and ongoing diagnostic feedback so students always know where they stand.</p>
+        <ul class="space-y-3">
+          <li class="tick-item"><svg class="tick w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Full Units 1, 2, 3 &amp; 4 coverage</li>
+          <li class="tick-item"><svg class="tick w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> SAC preparation for every assessment</li>
+          <li class="tick-item"><svg class="tick w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Exam strategy and extended response technique</li>
+          <li class="tick-item"><svg class="tick w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> VCAA exam-style question practice each session</li>
+        </ul>
+      </div>
+      <div class="fade-in-up">
+        <div class="rounded-2xl p-6 border border-teal/20 bg-gradient-to-br from-teal/8 to-transparent">
+          <h3 class="font-display font-bold text-slate-800 text-lg mb-5">Program At a Glance</h3>
+          <div class="grid grid-cols-2 gap-3 mb-5">
+            <div class="stat-tile"><p class="text-2xl font-extrabold font-display text-teal mb-1">Yr 11–12</p><p class="text-xs text-slate-500 font-medium">Year Level</p></div>
+            <div class="stat-tile"><p class="text-2xl font-extrabold font-display text-teal mb-1">Max 6</p><p class="text-xs text-slate-500 font-medium">Students per group</p></div>
+            <div class="stat-tile"><p class="text-2xl font-extrabold font-display text-teal mb-1">90 min</p><p class="text-xs text-slate-500 font-medium">Session length</p></div>
+            <div class="stat-tile"><p class="text-2xl font-extrabold font-display text-teal mb-1">VCAA</p><p class="text-xs text-slate-500 font-medium">Curriculum</p></div>
+          </div>
+          <div class="space-y-2.5 text-sm">
+            <div class="flex items-center justify-between py-2.5 border-b border-slate-200"><span class="text-slate-500">Format</span><span class="font-medium text-slate-800">Group / 1-on-1 / Online</span></div>
+            <div class="flex items-center justify-between py-2.5 border-b border-slate-200"><span class="text-slate-500">Location</span><span class="font-medium text-slate-800">Melbourne or Online</span></div>
+            <div class="flex items-center justify-between py-2.5"><span class="text-slate-500">Partner Centre</span><span class="font-medium text-slate-800">Vinsara Institute</span></div>
+          </div>
+          <a href="enrol.html" class="btn-primary w-full justify-center mt-6 text-sm">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  LEARNING JOURNEY                   ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<section class="py-20 px-6" aria-label="Learning Journey">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12 fade-in-up">
+      <span class="section-badge mb-4 inline-block">The Journey</span>
+      <h2 class="font-display font-extrabold text-4xl text-white mb-4">Your Learning Journey</h2>
+      <p class="text-white/50 max-w-xl mx-auto">Four interconnected phases that build from cellular foundations right through to exam mastery.</p>
+    </div>
+
+    <!-- Desktop timeline -->
+    <div class="hidden md:flex items-start fade-in-up" role="list" aria-label="Learning journey phases">
+      <div class="journey-step" role="listitem">
+        <div class="journey-icon"><svg class="w-6 h-6 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 003 1.65L21 12m0 0a1.65 1.65 0 00-3-1.65L14 12m0 0a1.65 1.65 0 00-3 1.65L12 12"/></svg></div>
+        <div class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-teal text-white text-xs font-bold mb-2">1</div>
+        <h3 class="font-semibold text-white text-sm mb-1">Cellular Biology</h3>
+        <p class="text-white/40 text-xs leading-relaxed px-1">Cell structure, function, membranes &amp; organelles</p>
+      </div>
+      <div class="journey-step" role="listitem">
+        <div class="journey-icon"><svg class="w-6 h-6 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></div>
+        <div class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-teal text-white text-xs font-bold mb-2">2</div>
+        <h3 class="font-semibold text-white text-sm mb-1">Genetics</h3>
+        <p class="text-white/40 text-xs leading-relaxed px-1">DNA, inheritance, pedigree analysis &amp; biotechnology</p>
+      </div>
+      <div class="journey-step" role="listitem">
+        <div class="journey-icon"><svg class="w-6 h-6 text-mint" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547"/></svg></div>
+        <div class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-mint text-white text-xs font-bold mb-2">3</div>
+        <h3 class="font-semibold text-white text-sm mb-1">Biochemistry &amp; Immunity</h3>
+        <p class="text-white/40 text-xs leading-relaxed px-1">Cellular processes, immune response &amp; signal pathways</p>
+      </div>
+      <div class="journey-step" role="listitem">
+        <div class="journey-icon"><svg class="w-6 h-6 text-mint" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945"/><path d="M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg></div>
+        <div class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-mint text-white text-xs font-bold mb-2">4</div>
+        <h3 class="font-semibold text-white text-sm mb-1">Exam Mastery</h3>
+        <p class="text-white/40 text-xs leading-relaxed px-1">Evolution, past exams &amp; exam performance strategy</p>
+      </div>
+    </div>
+
+    <!-- Mobile timeline -->
+    <ol class="md:hidden space-y-6 fade-in-up">
+      <li class="flex items-start gap-4">
+        <div class="flex-shrink-0 flex flex-col items-center">
+          <div class="w-10 h-10 rounded-full bg-teal/20 border-2 border-teal/40 flex items-center justify-center">
+            <span class="font-bold text-teal text-sm">1</span>
+          </div>
+          <div class="w-px flex-1 bg-teal/20 mt-2"></div>
+        </div>
+        <div class="pb-6">
+          <h3 class="font-semibold text-white mb-1">Cellular Biology</h3>
+          <p class="text-white/45 text-sm leading-relaxed">Cell structure, function, membranes &amp; organelles</p>
+        </div>
+      </li>
+      <li class="flex items-start gap-4">
+        <div class="flex-shrink-0 flex flex-col items-center">
+          <div class="w-10 h-10 rounded-full bg-teal/20 border-2 border-teal/40 flex items-center justify-center"><span class="font-bold text-teal text-sm">2</span></div>
+          <div class="w-px flex-1 bg-teal/20 mt-2"></div>
+        </div>
+        <div class="pb-6"><h3 class="font-semibold text-white mb-1">Genetics</h3><p class="text-white/45 text-sm leading-relaxed">DNA, inheritance, pedigree analysis &amp; biotechnology</p></div>
+      </li>
+      <li class="flex items-start gap-4">
+        <div class="flex-shrink-0 flex flex-col items-center">
+          <div class="w-10 h-10 rounded-full bg-mint/20 border-2 border-mint/40 flex items-center justify-center"><span class="font-bold text-mint text-sm">3</span></div>
+          <div class="w-px flex-1 bg-mint/20 mt-2"></div>
+        </div>
+        <div class="pb-6"><h3 class="font-semibold text-white mb-1">Biochemistry &amp; Immunity</h3><p class="text-white/45 text-sm leading-relaxed">Cellular processes, immune response &amp; signal pathways</p></div>
+      </li>
+      <li class="flex items-start gap-4">
+        <div class="flex-shrink-0 flex flex-col items-center">
+          <div class="w-10 h-10 rounded-full bg-mint/20 border-2 border-mint/40 flex items-center justify-center"><span class="font-bold text-mint text-sm">4</span></div>
+        </div>
+        <div><h3 class="font-semibold text-white mb-1">Exam Mastery</h3><p class="text-white/45 text-sm leading-relaxed">Evolution, past exams &amp; exam performance strategy</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  CURRICULUM BREAKDOWN               ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<section id="curriculum" class="py-20 px-6 section-grey" aria-label="Curriculum breakdown">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-10 fade-in-up">
+      <span class="section-badge mb-4 inline-block">Curriculum</span>
+      <h2 class="section-title">What We Cover</h2>
+      <p class="section-subtitle max-w-lg mx-auto">Full Units 1–4 curriculum, VCAA-aligned. Click any unit to expand the topic list.</p>
+    </div>
+
+    <div class="space-y-3 fade-in-up" x-data="{ expanded: null }">
+
+      <!-- Unit 1 -->
+      <div class="curriculum-card bg-white shadow-sm">
+        <button @click="expanded = expanded === 1 ? null : 1" class="curriculum-btn" :aria-expanded="expanded === 1">
+          <div class="flex items-center gap-3">
+            <span class="text-xs font-bold text-white bg-teal px-2.5 py-1 rounded-md flex-shrink-0">Unit 1</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm">Cells and Ecosystems</p>
+              <p class="text-slate-400 text-xs">Cellular structure, function &amp; ecology</p>
+            </div>
+          </div>
+          <svg :class="expanded === 1 ? 'rotate-180' : ''" class="w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="expanded === 1" x-transition class="curriculum-body border-t border-slate-100">
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 pt-4 text-sm text-slate-600">
+            <li class="flex gap-2"><span class="text-teal">•</span> Cell theory &amp; prokaryote/eukaryote comparison</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Cell organelles: structure and function</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Cell membrane — fluid mosaic model</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Transport: diffusion, osmosis, active transport</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Photosynthesis — light &amp; dark reactions</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Cellular respiration — aerobic &amp; anaerobic</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Ecosystem structure &amp; biotic/abiotic factors</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Energy flow &amp; nutrient cycling</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Unit 2 -->
+      <div class="curriculum-card bg-white shadow-sm">
+        <button @click="expanded = expanded === 2 ? null : 2" class="curriculum-btn" :aria-expanded="expanded === 2">
+          <div class="flex items-center gap-3">
+            <span class="text-xs font-bold text-white bg-teal px-2.5 py-1 rounded-md flex-shrink-0">Unit 2</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm">Genetics and Reproduction</p>
+              <p class="text-slate-400 text-xs">DNA, inheritance &amp; biotechnology</p>
+            </div>
+          </div>
+          <svg :class="expanded === 2 ? 'rotate-180' : ''" class="w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="expanded === 2" x-transition class="curriculum-body border-t border-slate-100">
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 pt-4 text-sm text-slate-600">
+            <li class="flex gap-2"><span class="text-teal">•</span> DNA structure — double helix &amp; base pairing</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> DNA replication &amp; protein synthesis</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Mitosis &amp; meiosis</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Mendel's laws of inheritance</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Monohybrid &amp; dihybrid crosses</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Sex-linked inheritance &amp; pedigree analysis</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Mutations — types and implications</li>
+            <li class="flex gap-2"><span class="text-teal">•</span> Biotechnology: PCR, gel electrophoresis, CRISPR</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Unit 3 -->
+      <div class="curriculum-card bg-white shadow-sm">
+        <button @click="expanded = expanded === 3 ? null : 3" class="curriculum-btn" :aria-expanded="expanded === 3">
+          <div class="flex items-center gap-3">
+            <span class="text-xs font-bold text-white bg-mint px-2.5 py-1 rounded-md flex-shrink-0">Unit 3</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm">Cellular Biochemistry &amp; Immunity</p>
+              <p class="text-slate-400 text-xs">Biochemical pathways &amp; immune systems</p>
+            </div>
+          </div>
+          <svg :class="expanded === 3 ? 'rotate-180' : ''" class="w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="expanded === 3" x-transition class="curriculum-body border-t border-slate-100">
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 pt-4 text-sm text-slate-600">
+            <li class="flex gap-2"><span class="text-mint">•</span> Enzymes &amp; biochemical pathways</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> ATP production — glycolysis, Krebs, ETC</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Photosynthesis — Calvin cycle</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Cell signalling — receptors &amp; transduction</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Innate immune response</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Adaptive immunity — B &amp; T lymphocytes</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Antigens, antibodies &amp; vaccination</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> SAC 3 preparation &amp; extended response technique</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Unit 4 -->
+      <div class="curriculum-card bg-white shadow-sm">
+        <button @click="expanded = expanded === 4 ? null : 4" class="curriculum-btn" :aria-expanded="expanded === 4">
+          <div class="flex items-center gap-3">
+            <span class="text-xs font-bold text-white bg-mint px-2.5 py-1 rounded-md flex-shrink-0">Unit 4</span>
+            <div>
+              <p class="font-semibold text-slate-800 text-sm">Evolution &amp; Immunity (Extended)</p>
+              <p class="text-slate-400 text-xs">Evolutionary theory, variation &amp; exam mastery</p>
+            </div>
+          </div>
+          <svg :class="expanded === 4 ? 'rotate-180' : ''" class="w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="expanded === 4" x-transition class="curriculum-body border-t border-slate-100">
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 pt-4 text-sm text-slate-600">
+            <li class="flex gap-2"><span class="text-mint">•</span> Darwin's theory of natural selection</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Genetic variation — sources &amp; importance</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Evidence for evolution — fossil &amp; molecular</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Speciation — allopatric &amp; sympatric</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Human evolution — hominid differences</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Epigenetics &amp; gene regulation</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> VCAA past exam walkthrough</li>
+            <li class="flex gap-2"><span class="text-mint">•</span> Extended response writing technique</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  WHO THIS IS FOR                    ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<section class="py-20 px-6" aria-label="Who this program suits">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-in-up">
+        <span class="section-badge mb-4 inline-block">Who Is This For?</span>
+        <h2 class="font-display font-extrabold text-4xl text-white mb-6">Is This Program Right for You?</h2>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3 text-white/60 text-sm leading-relaxed">
+            <svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            Year 11 students starting VCE Biology who want to build strong foundations from the start
+          </li>
+          <li class="flex items-start gap-3 text-white/60 text-sm leading-relaxed">
+            <svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            Year 12 students targeting a strong study score who need structured SAC and exam support
+          </li>
+          <li class="flex items-start gap-3 text-white/60 text-sm leading-relaxed">
+            <svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            Students who understand content but struggle with extended response and exam technique
+          </li>
+          <li class="flex items-start gap-3 text-white/60 text-sm leading-relaxed">
+            <svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            Students with specific gaps in Units 3 &amp; 4 who want intensive preparation close to exams
+          </li>
+          <li class="flex items-start gap-3 text-white/60 text-sm leading-relaxed">
+            <svg class="w-5 h-5 text-mint flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            Students considering medicine, pharmacy, or life sciences pathways who want a deep foundation
+          </li>
+        </ul>
+      </div>
+      <div class="fade-in-up">
+        <div class="glass-card rounded-3xl p-8">
+          <h3 class="font-display font-bold text-white text-lg mb-5">Teaching Format Options</h3>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-teal/15 border border-teal/25 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-white text-sm mb-1">Small Group (max 6)</p>
+                <p class="text-white/45 text-xs leading-relaxed">Class-based learning with peer discussion and teacher-led content delivery. Weekly sessions that align with your school timeline.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-mint/15 border border-mint/25 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-mint" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-white text-sm mb-1">1-on-1 Tutoring</p>
+                <p class="text-white/45 text-xs leading-relaxed">Personalised to your SAC dates, exam schedule, and specific weaknesses. Flexible scheduling throughout the year.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-teal/10 border border-white/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-white text-sm mb-1">Online Live</p>
+                <p class="text-white/45 text-xs leading-relaxed">Live interactive sessions with shared whiteboards and real-time annotation. Available anywhere in Australia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  WHY SCIMIND                        ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<section class="py-20 px-6 section-light" aria-label="Why SciMind is different">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12 fade-in-up">
+      <span class="section-badge mb-4 inline-block">Our Difference</span>
+      <h2 class="section-title">Why SciMind Is Different</h2>
+      <p class="section-subtitle max-w-xl mx-auto">We don't just teach Biology — we build the kind of scientific understanding that earns top marks.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 fade-in-up">
+      <div class="glass-card p-7 rounded-2xl">
+        <div class="w-12 h-12 rounded-xl bg-teal/10 border border-teal/20 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+        </div>
+        <h3 class="font-semibold text-slate-800 text-sm mb-2">VCAA Expert Tutors</h3>
+        <p class="text-slate-500 text-xs leading-relaxed">All tutors specialise in VCE Biology with deep knowledge of VCAA assessment criteria and marking rubrics.</p>
+      </div>
+      <div class="glass-card p-7 rounded-2xl">
+        <div class="w-12 h-12 rounded-xl bg-mint/10 border border-mint/20 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-mint" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        </div>
+        <h3 class="font-semibold text-slate-800 text-sm mb-2">Diagnostic Progress Tracking</h3>
+        <p class="text-slate-500 text-xs leading-relaxed">Regular diagnostic assessments identify gaps early so sessions target exactly what each student needs most.</p>
+      </div>
+      <div class="glass-card p-7 rounded-2xl">
+        <div class="w-12 h-12 rounded-xl bg-teal/10 border border-teal/20 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+        </div>
+        <h3 class="font-semibold text-slate-800 text-sm mb-2">SAC-Aligned Resources</h3>
+        <p class="text-slate-500 text-xs leading-relaxed">Custom-written SAC practice materials and model answers aligned to the assessment criteria for each school type.</p>
+      </div>
+      <div class="glass-card p-7 rounded-2xl">
+        <div class="w-12 h-12 rounded-xl bg-mint/10 border border-mint/20 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-mint" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3 class="font-semibold text-slate-800 text-sm mb-2">Exam Technique Focus</h3>
+        <p class="text-slate-500 text-xs leading-relaxed">We teach students how to decode VCAA questions, structure extended responses, and allocate time effectively under exam conditions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  LEARNING OUTCOMES                  ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<section class="py-20 px-6" aria-label="Learning outcomes">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-10 fade-in-up">
+      <span class="section-badge mb-4 inline-block">Learning Outcomes</span>
+      <h2 class="font-display font-extrabold text-4xl text-white mb-4">What Students Achieve</h2>
+      <p class="text-white/50 max-w-xl mx-auto">By the end of this program, students consistently report stronger confidence, better SAC results, and improved exam performance.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-3 max-w-4xl mx-auto fade-in-up">
+      <div class="tick-item text-white/60"><svg class="tick w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Confident understanding of all Units 1–4 content</div>
+      <div class="tick-item text-white/60"><svg class="tick w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Ability to write high-scoring extended responses</div>
+      <div class="tick-item text-white/60"><svg class="tick w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Strong SAC preparation across all assessment types</div>
+      <div class="tick-item text-white/60"><svg class="tick w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Well-developed biological reasoning &amp; critical thinking</div>
+      <div class="tick-item text-white/60"><svg class="tick w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Fluency with VCAA-style data analysis questions</div>
+      <div class="tick-item text-white/60"><svg class="tick w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Exam-day technique &amp; time management strategy</div>
+      <div class="tick-item text-white/60"><svg class="tick w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Clear understanding of cell &amp; molecular biology</div>
+      <div class="tick-item text-white/60"><svg class="tick w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> A strong biology foundation for tertiary science</div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  SAMPLE LEARNING MATERIALS         ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<section class="py-20 px-6 section-grey" aria-label="Sample learning materials">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12 fade-in-up">
+      <span class="section-badge mb-4 inline-block">Learning Hub</span>
+      <h2 class="section-title">Sample Learning Materials</h2>
+      <p class="section-subtitle max-w-lg mx-auto">A preview of the resources available to enrolled students through our Learning Hub.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 fade-in-up">
+      <div class="glass-card p-6 rounded-2xl">
+        <div class="w-10 h-10 rounded-xl bg-teal/10 border border-teal/20 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        </div>
+        <h3 class="font-semibold text-slate-800 text-sm mb-2">Unit 3 Notes — Cellular Biochemistry</h3>
+        <p class="text-slate-500 text-xs leading-relaxed mb-4">Detailed, visually structured notes covering ATP synthesis, enzyme function and signal transduction. Mapped to VCAA outcomes.</p>
+        <a href="learning-hub.html" class="text-xs font-semibold text-teal hover:underline">View in Learning Hub →</a>
+      </div>
+      <div class="glass-card p-6 rounded-2xl">
+        <div class="w-10 h-10 rounded-xl bg-mint/10 border border-mint/20 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-mint" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3 class="font-semibold text-slate-800 text-sm mb-2">Genetics Practice Questions</h3>
+        <p class="text-slate-500 text-xs leading-relaxed mb-4">VCAA-style question set covering pedigree analysis, crosses and sex-linked inheritance with full worked answers.</p>
+        <a href="learning-hub.html" class="text-xs font-semibold text-teal hover:underline">View in Learning Hub →</a>
+      </div>
+      <div class="glass-card p-6 rounded-2xl">
+        <div class="w-10 h-10 rounded-xl bg-teal/10 border border-teal/20 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M15 10l4.553-2.069A1 1 0 0121 8.87v6.26a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+        </div>
+        <h3 class="font-semibold text-slate-800 text-sm mb-2">Exam Technique Walkthrough</h3>
+        <p class="text-slate-500 text-xs leading-relaxed mb-4">A guided walkthrough of a full VCE Biology exam with time management tips and common mistake analysis.</p>
+        <a href="learning-hub.html" class="text-xs font-semibold text-teal hover:underline">View in Learning Hub →</a>
+      </div>
+    </div>
+    <div class="text-center mt-8 fade-in-up">
+      <a href="learning-hub.html" class="btn-secondary">Browse All Materials in the Learning Hub</a>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  FAQ                                ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<section class="py-20 px-6" aria-label="FAQ about VCE Biology program">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-10 fade-in-up">
+      <span class="section-badge mb-4 inline-block">FAQ</span>
+      <h2 class="font-display font-extrabold text-4xl text-white mb-4">VCE Biology Questions</h2>
+    </div>
+    <div class="space-y-3 fade-in-up" x-data="{ active: null }">
+      <div class="glass-card rounded-2xl overflow-hidden">
+        <button @click="active = active === 1 ? null : 1" class="w-full flex items-center justify-between p-5 text-left gap-4">
+          <span class="font-semibold text-white/90 text-sm">Can I join mid-year for Unit 3 &amp; 4?</span>
+          <svg :class="active === 1 ? 'rotate-180' : ''" class="w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="active === 1" x-transition class="px-5 pb-5 text-white/55 text-sm leading-relaxed border-t border-white/5">
+          Yes. Many Year 12 students join our program at the start of the Unit 3 &amp; 4 year. We offer a diagnostic to identify any Unit 1 &amp; 2 gaps so we can address them as part of the program without slowing down the core Unit 3 &amp; 4 progression.
+        </div>
+      </div>
+      <div class="glass-card rounded-2xl overflow-hidden">
+        <button @click="active = active === 2 ? null : 2" class="w-full flex items-center justify-between p-5 text-left gap-4">
+          <span class="font-semibold text-white/90 text-sm">Do sessions align with my school's SAC schedule?</span>
+          <svg :class="active === 2 ? 'rotate-180' : ''" class="w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="active === 2" x-transition class="px-5 pb-5 text-white/55 text-sm leading-relaxed border-t border-white/5">
+          We align small group sessions to the general VCAA assessment calendar. For 1-on-1 tutoring, we can directly align to your specific school's SAC dates — just share your schedule at enrolment.
+        </div>
+      </div>
+      <div class="glass-card rounded-2xl overflow-hidden">
+        <button @click="active = active === 3 ? null : 3" class="w-full flex items-center justify-between p-5 text-left gap-4">
+          <span class="font-semibold text-white/90 text-sm">How long are sessions and how often?</span>
+          <svg :class="active === 3 ? 'rotate-180' : ''" class="w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="active === 3" x-transition class="px-5 pb-5 text-white/55 text-sm leading-relaxed border-t border-white/5">
+          Standard group sessions are 90 minutes per week. 1-on-1 sessions can be 60 or 90 minutes, and additional sessions can be booked during SAC or exam preparation periods.
+        </div>
+      </div>
+      <div class="glass-card rounded-2xl overflow-hidden">
+        <button @click="active = active === 4 ? null : 4" class="w-full flex items-center justify-between p-5 text-left gap-4">
+          <span class="font-semibold text-white/90 text-sm">Do you offer holiday intensives?</span>
+          <svg :class="active === 4 ? 'rotate-180' : ''" class="w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="active === 4" x-transition class="px-5 pb-5 text-white/55 text-sm leading-relaxed border-t border-white/5">
+          Yes. We run holiday intensive programs during school holidays and pre-exam review sessions in the lead-up to the VCAA exam. <a href="enrol.html" class="text-teal hover:underline">Contact us</a> to find out what's coming up.
+        </div>
+      </div>
+      <div class="glass-card rounded-2xl overflow-hidden">
+        <button @click="active = active === 5 ? null : 5" class="w-full flex items-center justify-between p-5 text-left gap-4">
+          <span class="font-semibold text-white/90 text-sm">When are VCE Biology sessions scheduled?</span>
+          <svg :class="active === 5 ? 'rotate-180' : ''" class="w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="active === 5" x-transition class="px-5 pb-5 text-white/55 text-sm leading-relaxed border-t border-white/5">
+          <p class="mb-3">Current group session times for VCE Biology:</p>
+          <div class="space-y-1.5 mb-4">
+            <div class="flex justify-between text-sm">
+              <span class="text-white/40">Saturday</span>
+              <span class="font-semibold text-white/80">10:00am – 11:30am</span>
+            </div>
+            <div class="flex justify-between text-sm">
+              <span class="text-white/40">Wednesday</span>
+              <span class="font-semibold text-white/80">5:30pm – 7:00pm</span>
+            </div>
+          </div>
+          <div class="flex items-start gap-2 rounded-xl p-3" style="background:rgba(11,129,162,0.1);border:1px solid rgba(11,129,162,0.2)">
+            <svg class="w-4 h-4 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span class="text-xs">These times don't suit you? <a href="enrol.html" class="text-teal font-semibold hover:underline">Contact us</a> — we're happy to arrange alternative session times to fit your schedule.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  FINAL CTA                          ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<section class="py-16 px-6">
+  <div class="max-w-5xl mx-auto fade-in-up">
+    <div class="relative rounded-3xl p-12 md:p-16 text-center overflow-hidden" style="background:linear-gradient(135deg,rgba(11,129,162,0.18),rgba(89,168,156,0.10),rgba(0,58,125,0.20));border:1px solid rgba(11,129,162,0.28);">
+      <div class="absolute inset-0 pointer-events-none rounded-3xl" style="background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(11,129,162,0.15),transparent);"></div>
+      <div class="relative z-10">
+        <span class="section-badge mb-5 inline-block">Start Today</span>
+        <h2 class="font-display font-extrabold text-4xl md:text-5xl text-white mb-4">Ready to Excel in VCE Biology?</h2>
+        <p class="text-white/55 max-w-xl mx-auto mb-8 leading-relaxed">Enquire today to discuss timetabling, enrolment, and the right format for your student.</p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="enrol.html" class="btn-primary text-base px-8 py-3.5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Enrol Now
+          </a>
+          <a href="programs.html" class="btn-secondary text-base px-8 py-3.5">View All Programs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  FOOTER                             ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<footer class="bg-[#020d1a] border-t border-white/5 px-6 pt-14 pb-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+      <div class="md:col-span-2">
+        <img src="../assets/images/H - White and Color.svg" alt="SciMind Education" class="h-10 w-auto mb-4 object-contain" onerror="this.style.display='none'"/>
+        <p class="text-white/40 text-sm leading-relaxed max-w-xs">Specialist science tutoring for VCE and secondary students. Partnered with Vinsara Institute of Education.</p>
+      </div>
+      <nav>
+        <h4 class="font-semibold text-white/70 text-sm mb-4 uppercase tracking-wider">Programs</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="vce-biology.html"       class="text-mint font-medium">VCE Biology</a></li>
+          <li><a href="vce-chemistry.html"     class="text-white/40 hover:text-mint transition-colors">VCE Chemistry</a></li>
+          <li><a href="year7-10-science.html"  class="text-white/40 hover:text-mint transition-colors">Year 7–10 Science</a></li>
+          <li><a href="year4-6-science.html"   class="text-white/40 hover:text-mint transition-colors">Year 4–6 Science</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <h4 class="font-semibold text-white/70 text-sm mb-4 uppercase tracking-wider">Quick Links</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="../index.html"           class="text-white/40 hover:text-mint transition-colors">Home</a></li>
+          <li><a href="programs.html"           class="text-white/40 hover:text-mint transition-colors">All Programs</a></li>
+          <li><a href="learning-hub.html"       class="text-white/40 hover:text-mint transition-colors">Learning Hub</a></li>
+          <li><a href="enrol.html"   class="text-white/40 hover:text-mint transition-colors">Enrol / Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="border-t border-white/5 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-white/30 text-xs">
+      <p>© 2026 SciMind Education. All rights reserved.</p>
+      <p>In partnership with <a href="../index.html#partner" class="text-mint/60 hover:text-mint transition-colors">Vinsara Institute of Education</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

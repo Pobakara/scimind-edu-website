@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- SEO -->
+  <title>Enrol Now | SciMind Education – Melbourne Science Tutoring</title>
+  <meta name="description" content="Enrol your student in SciMind Education's science tutoring programs. VCE Biology, VCE Chemistry, Year 4–12. Small groups, 1-on-1, in-centre and online across Melbourne."/>
+  <meta name="keywords" content="enrol science tutor Melbourne, VCE tutoring enrolment, SciMind Education contact, science tutoring enquiry Melbourne"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.scimindeducation.com.au/enrol"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Enrol Now | SciMind Education"/>
+  <meta property="og:description" content="Start your science tutoring journey with SciMind Education. Expert VCE and secondary science tutoring across Melbourne."/>
+  <meta property="og:url" content="https://www.scimindeducation.com.au/enrol"/>
+  <meta property="og:site_name" content="SciMind Education"/>
+
+  <!-- JSON-LD: ContactPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Enrol at SciMind Education",
+    "url": "https://www.scimindeducation.com.au/enrol",
+    "description": "Enrolment and contact page for SciMind Education, Melbourne science tutoring provider.",
+    "mainEntity": {
+      "@type": "EducationalOrganization",
+      "name": "SciMind Education",
+      "email": "info@scimindeducation.com.au",
+      "telephone": "+61-3-XXXX-XXXX",
+      "address": { "@type": "PostalAddress", "addressRegion": "VIC", "addressCountry": "AU" }
+    }
+  }
+  </script>
+
+  <!-- Styles & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom.css?v=12"/>
+
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          navy:  { DEFAULT: '#003a7d', light: '#0050b0', dark: '#002558' },
+          teal:  { DEFAULT: '#0b81a2', light: '#0d9ac2', dark: '#086882' },
+          mint:  { DEFAULT: '#59a89c', light: '#6bbfb3', dark: '#448a7e' },
+        },
+        fontFamily: {
+          sans:    ['Inter', 'system-ui', 'sans-serif'],
+          display: ['Poppins', 'system-ui', 'sans-serif'],
+        },
+      }}
+    }
+  </script>
+
+  <style>
+    /* ── Section theming ── */
+    .section-light { background-color: #f8fafc !important; color: #1e293b !important; }
+    .section-grey  { background-color: #f1f5f9 !important; color: #1e293b !important; }
+    .section-light .section-title, .section-grey .section-title { color: #1e293b !important; }
+    .section-light .section-subtitle, .section-grey .section-subtitle { color: #64748b !important; }
+    .section-light .section-badge, .section-grey .section-badge {
+      color: #0b81a2 !important; background: rgba(11,129,162,0.09) !important; border-color: rgba(11,129,162,0.22) !important;
+    }
+    .section-light .glass-card, .section-grey .glass-card {
+      background: #ffffff !important; border: 1px solid #e2e8f0 !important;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06) !important; backdrop-filter: none !important;
+    }
+    .section-light .glass-card h3, .section-grey .glass-card h3 { color: #1e293b !important; }
+    .section-light .glass-card h4, .section-grey .glass-card h4 { color: #1e293b !important; }
+    .section-light .glass-card p,  .section-grey .glass-card p  { color: #64748b !important; }
+    .section-light [class*="text-white"]  { color: #475569 !important; }
+    .section-grey  [class*="text-white"]  { color: #475569 !important; }
+    .section-light [class*="text-teal"]   { color: #0b81a2 !important; }
+    .section-light [class*="text-mint"]   { color: #59a89c !important; }
+    .section-grey  [class*="text-teal"]   { color: #0b81a2 !important; }
+    .section-grey  [class*="text-mint"]   { color: #59a89c !important; }
+
+    /* ── Form field ── */
+    .enrol-input {
+      width: 100%; padding: 11px 14px; border-radius: 12px;
+      background: #f8fafc; border: 1.5px solid #e2e8f0;
+      color: #1e293b; font-size: 0.875rem; outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+      font-family: inherit;
+    }
+    .enrol-input:focus {
+      background: #ffffff; border-color: #0b81a2;
+      box-shadow: 0 0 0 3px rgba(11,129,162,0.12);
+    }
+    .enrol-input::placeholder { color: #94a3b8; }
+    .enrol-label {
+      display: block; font-size: 0.8125rem; font-weight: 600;
+      color: #475569; margin-bottom: 6px; letter-spacing: 0.01em;
+    }
+    .enrol-select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%2394a3b8' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      background-size: 16px;
+      padding-right: 40px;
+    }
+
+    /* ── Program radio cards ── */
+    .prog-radio { display: none; }
+    .prog-radio-label {
+      display: flex; flex-direction: column; align-items: flex-start; gap: 4px;
+      padding: 14px 16px; border-radius: 14px; cursor: pointer;
+      border: 1.5px solid #e2e8f0; background: #f8fafc;
+      transition: all 0.2s; user-select: none;
+    }
+    .prog-radio-label:hover { border-color: #0b81a2; background: #f0fbff; }
+    .prog-radio:checked + .prog-radio-label {
+      border-color: #0b81a2; background: #e8f7fd;
+      box-shadow: 0 0 0 3px rgba(11,129,162,0.1);
+    }
+    .prog-radio:checked + .prog-radio-label .prog-check {
+      background: #0b81a2; border-color: #0b81a2;
+    }
+    .prog-check {
+      width: 18px; height: 18px; border-radius: 50%;
+      border: 2px solid #cbd5e1; background: white;
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.2s; flex-shrink: 0;
+    }
+    .prog-check::after {
+      content: ''; width: 6px; height: 6px; border-radius: 50%;
+      background: white; display: block; opacity: 0; transition: opacity 0.2s;
+    }
+    .prog-radio:checked + .prog-radio-label .prog-check::after { opacity: 1; }
+
+    /* ── Format toggle ── */
+    .fmt-radio { display: none; }
+    .fmt-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 18px; border-radius: 10px; cursor: pointer;
+      border: 1.5px solid #e2e8f0; background: #f8fafc;
+      font-size: 0.875rem; font-weight: 500; color: #475569;
+      transition: all 0.2s; user-select: none;
+    }
+    .fmt-label:hover { border-color: #0b81a2; color: #0b81a2; }
+    .fmt-radio:checked + .fmt-label {
+      border-color: #0b81a2; background: #e8f7fd;
+      color: #0b81a2; font-weight: 600;
+      box-shadow: 0 0 0 3px rgba(11,129,162,0.1);
+    }
+
+    /* ── Day checkbox ── */
+    .day-check { display: none; }
+    .day-label {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 44px; height: 44px; border-radius: 10px; cursor: pointer;
+      border: 1.5px solid #e2e8f0; background: #f8fafc;
+      font-size: 0.75rem; font-weight: 600; color: #94a3b8;
+      transition: all 0.2s; user-select: none;
+    }
+    .day-label:hover { border-color: #0b81a2; color: #0b81a2; background: #f0fbff; }
+    .day-check:checked + .day-label {
+      border-color: #0b81a2; background: #0b81a2;
+      color: #ffffff; box-shadow: 0 4px 12px rgba(11,129,162,0.3);
+    }
+
+    /* ── Step indicator ── */
+    .step-dot {
+      width: 32px; height: 32px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.75rem; font-weight: 700; transition: all 0.3s;
+    }
+    .step-dot.active { background: #0b81a2; color: white; box-shadow: 0 0 0 4px rgba(11,129,162,0.2); }
+    .step-dot.done   { background: #59a89c; color: white; }
+    .step-dot.pending{ background: #e2e8f0; color: #94a3b8; }
+    .step-line { flex: 1; height: 2px; transition: background 0.3s; }
+    .step-line.done   { background: #59a89c; }
+    .step-line.pending{ background: #e2e8f0; }
+
+    /* ── Contact info card ── */
+    .contact-card {
+      background: #ffffff; border: 1px solid #e2e8f0;
+      border-radius: 20px; padding: 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+    .contact-card:hover {
+      border-color: rgba(11,129,162,0.35);
+      box-shadow: 0 8px 32px rgba(11,129,162,0.1);
+      transform: translateY(-3px);
+    }
+
+    /* ── FAQ accordion ── */
+    .faq-item {
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px; overflow: hidden; background: rgba(255,255,255,0.03);
+      transition: border-color 0.2s;
+    }
+    .faq-item:hover { border-color: rgba(11,129,162,0.3); }
+
+    /* ── Success screen ── */
+    @keyframes popIn {
+      0%  { transform: scale(0.6); opacity: 0; }
+      70% { transform: scale(1.08); }
+      100%{ transform: scale(1); opacity: 1; }
+    }
+    .success-icon { animation: popIn 0.5s ease forwards; }
+
+    /* ── Review summary row ── */
+    .review-row {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      padding: 10px 0; border-bottom: 1px solid #f1f5f9; font-size: 0.875rem;
+      gap: 12px;
+    }
+    .review-row:last-child { border-bottom: none; }
+    .review-label { color: #94a3b8; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; flex-shrink: 0; }
+    .review-value { color: #1e293b; font-weight: 500; text-align: right; }
+  </style>
+</head>
+
+<body class="bg-[#020d1a] text-white font-sans antialiased overflow-x-hidden">
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  NAVBAR                              ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 scrolled" x-data="{ mobileOpen: false }">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <a href="../index.html" class="flex items-center" aria-label="SciMind Education – Home">
+      <img src="../assets/images/H - White and Color.svg" alt="SciMind Education" class="h-9 w-auto object-contain"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+      <div style="display:none" class="items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-teal to-mint flex items-center justify-center">
+          <span class="font-display font-extrabold text-sm text-white">S</span>
+        </div>
+        <span class="font-display font-bold text-white text-lg">SciMind</span>
+      </div>
+    </a>
+
+    <div class="hidden md:flex items-center gap-6">
+      <a href="../index.html"         class="text-white/70 hover:text-mint transition-colors text-sm font-medium">Home</a>
+      <a href="about.html"            class="text-white/70 hover:text-mint transition-colors text-sm font-medium">About</a>
+      <a href="programs.html"         class="text-white/70 hover:text-mint transition-colors text-sm font-medium">Programs</a>
+      <a href="learning-hub.html"     class="text-white/70 hover:text-mint transition-colors text-sm font-medium">Learning Hub</a>
+      <a href="../index.html#partner" class="text-white/70 hover:text-mint transition-colors text-sm font-medium">Partnership</a>
+      <a href="enrol.html"            class="text-mint text-sm font-medium">Contact</a>
+    </div>
+
+    <a href="enrol.html" class="hidden md:inline-flex btn-primary text-sm px-5 py-2.5">
+      Enrol Now
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+    </a>
+
+    <button @click="mobileOpen = !mobileOpen" class="md:hidden p-2 rounded-lg text-white/70 hover:text-white">
+      <svg x-show="!mobileOpen" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <svg x-show="mobileOpen"  class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div x-show="mobileOpen" x-transition class="md:hidden border-t border-white/5 bg-[#020d1a]/97 backdrop-blur-xl">
+    <div class="px-6 py-4 space-y-3 text-sm">
+      <a href="../index.html"         class="block text-white/70 hover:text-mint py-2 transition-colors">Home</a>
+      <a href="about.html"            class="block text-white/70 hover:text-mint py-2 transition-colors">About</a>
+      <a href="programs.html"         class="block text-white/70 hover:text-mint py-2 transition-colors">Programs</a>
+      <a href="learning-hub.html"     class="block text-white/70 hover:text-mint py-2 transition-colors">Learning Hub</a>
+      <a href="../index.html#partner" class="block text-white/70 hover:text-mint py-2 transition-colors">Partnership</a>
+      <a href="enrol.html"            class="block text-mint py-2">Contact</a>
+      <a href="enrol.html"            class="btn-primary w-full justify-center mt-2">Enrol Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  HERO                                ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<header class="relative pt-28 pb-16 px-6 overflow-hidden">
+  <div class="absolute inset-0 bg-hero-glow pointer-events-none"></div>
+  <div class="blob blob-1" style="opacity:.5"></div>
+  <div class="blob blob-2" style="opacity:.35"></div>
+  <div class="absolute inset-0 grid-overlay opacity-10 pointer-events-none"></div>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="Breadcrumb" class="relative z-10 max-w-7xl mx-auto mb-8">
+    <ol class="flex items-center gap-2 text-sm text-white/40">
+      <li><a href="../index.html" class="hover:text-mint transition-colors">Home</a></li>
+      <li><svg class="w-3 h-3 inline" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></li>
+      <li class="text-white/70" aria-current="page">Enrol &amp; Contact</li>
+    </ol>
+  </nav>
+
+  <div class="relative z-10 max-w-6xl mx-auto text-center fade-in-up">
+    <span class="section-badge mb-5 inline-block">Enrolment &amp; Enquiries</span>
+    <h1 class="font-display font-extrabold text-5xl md:text-6xl xl:text-7xl leading-[1.06] mb-5">
+      Start Your <span class="gradient-text">Science Journey.</span>
+    </h1>
+    <p class="text-white/55 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+      Fill in your details below and we'll match your student to the right program, tutor, and timetable — usually within 24 hours.
+    </p>
+
+    <!-- Quick contact strip -->
+    <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-white/50">
+      <a href="mailto:info@scimindeducation.com.au" class="flex items-center gap-2 hover:text-mint transition-colors">
+        <svg class="w-4 h-4 text-teal flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        info@scimindeducation.com.au
+      </a>
+      <span class="hidden sm:block w-px h-4 bg-white/15"></span>
+      <span class="flex items-center gap-2">
+        <svg class="w-4 h-4 text-teal flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        (03) XXXX XXXX
+      </span>
+      <span class="hidden sm:block w-px h-4 bg-white/15"></span>
+      <span class="flex items-center gap-2">
+        <svg class="w-4 h-4 text-teal flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        Melbourne, Victoria
+      </span>
+      <span class="hidden sm:block w-px h-4 bg-white/15"></span>
+      <span class="flex items-center gap-2">
+        <svg class="w-4 h-4 text-mint flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        We reply within 24 hrs
+      </span>
+    </div>
+  </div>
+</header>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  MAIN: FORM + SIDEBAR                ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<section class="py-16 px-6 section-light" aria-labelledby="form-heading">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
+
+      <!-- ── Multi-step Form (2/3 width) ── -->
+      <div class="lg:col-span-2 fade-in-up"
+           x-data="{
+             step: 1,
+             submitted: false,
+             form: {
+               parentName: '', email: '', phone: '', studentName: '',
+               yearLevel: '', program: '', format: '', days: [], message: ''
+             },
+             get programLabel() {
+               const map = { 'vce-bio': 'VCE Biology', 'vce-chem': 'VCE Chemistry', 'yr7-10': 'Year 7–10 Science', 'yr4-6': 'Year 4–6 Science' };
+               return map[this.form.program] || '—';
+             },
+             get formatLabel() {
+               const map = { 'small-group': 'Small Group', 'one-on-one': '1-on-1 Private', 'online': 'Online' };
+               return map[this.form.format] || '—';
+             },
+             get daysLabel() {
+               return this.form.days.length ? this.form.days.join(', ') : '—';
+             },
+             nextStep() { if (this.step < 3) this.step++; },
+             prevStep() { if (this.step > 1) this.step--; },
+             submit()   { this.submitted = true; }
+           }">
+
+        <!-- Step tracker -->
+        <div class="glass-card rounded-2xl px-6 py-5 mb-6">
+          <div class="flex items-center gap-0">
+            <!-- Step 1 -->
+            <div class="flex flex-col items-center gap-1.5">
+              <div class="step-dot" :class="step > 1 ? 'done' : step === 1 ? 'active' : 'pending'">
+                <template x-if="step > 1"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></template>
+                <template x-if="step <= 1"><span>1</span></template>
+              </div>
+              <span class="text-xs font-semibold whitespace-nowrap" :class="step >= 1 ? 'text-teal' : 'text-slate-400'">Your Details</span>
+            </div>
+            <div class="step-line mx-2 mb-5" :class="step > 1 ? 'done' : 'pending'"></div>
+            <!-- Step 2 -->
+            <div class="flex flex-col items-center gap-1.5">
+              <div class="step-dot" :class="step > 2 ? 'done' : step === 2 ? 'active' : 'pending'">
+                <template x-if="step > 2"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></template>
+                <template x-if="step <= 2"><span>2</span></template>
+              </div>
+              <span class="text-xs font-semibold whitespace-nowrap" :class="step >= 2 ? 'text-teal' : 'text-slate-400'">Program</span>
+            </div>
+            <div class="step-line mx-2 mb-5" :class="step > 2 ? 'done' : 'pending'"></div>
+            <!-- Step 3 -->
+            <div class="flex flex-col items-center gap-1.5">
+              <div class="step-dot" :class="step === 3 ? 'active' : 'pending'">
+                <span>3</span>
+              </div>
+              <span class="text-xs font-semibold whitespace-nowrap" :class="step === 3 ? 'text-teal' : 'text-slate-400'">Review &amp; Send</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ STEP 1: Your Details ═══ -->
+        <div x-show="step === 1 && !submitted" x-transition:enter="transition ease-out duration-250" x-transition:enter-start="opacity-0 translate-x-4" x-transition:enter-end="opacity-100 translate-x-0">
+          <div class="glass-card rounded-3xl p-8">
+            <h2 id="form-heading" class="font-display font-bold text-slate-800 text-2xl mb-1">About Your Student</h2>
+            <p class="text-slate-500 text-sm mb-8">Tell us who you are and who'll be attending sessions.</p>
+            <div class="space-y-5">
+              <!-- Parent/Guardian Name -->
+              <div>
+                <label class="enrol-label" for="parentName">Parent / Guardian Name <span class="text-red-400">*</span></label>
+                <input id="parentName" type="text" class="enrol-input" placeholder="e.g. Sarah Johnson" x-model="form.parentName" required/>
+              </div>
+              <!-- Email -->
+              <div>
+                <label class="enrol-label" for="email">Email Address <span class="text-red-400">*</span></label>
+                <input id="email" type="email" class="enrol-input" placeholder="you@example.com" x-model="form.email" required/>
+              </div>
+              <!-- Phone -->
+              <div>
+                <label class="enrol-label" for="phone">Phone Number</label>
+                <input id="phone" type="tel" class="enrol-input" placeholder="+61 4XX XXX XXX" x-model="form.phone"/>
+              </div>
+              <!-- 2-col: Student name + Year level -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label class="enrol-label" for="studentName">Student First Name <span class="text-red-400">*</span></label>
+                  <input id="studentName" type="text" class="enrol-input" placeholder="e.g. Alex" x-model="form.studentName" required/>
+                </div>
+                <div>
+                  <label class="enrol-label" for="yearLevel">Year Level <span class="text-red-400">*</span></label>
+                  <select id="yearLevel" class="enrol-input enrol-select" x-model="form.yearLevel" required>
+                    <option value="">Select year level…</option>
+                    <option value="Year 4">Year 4</option>
+                    <option value="Year 5">Year 5</option>
+                    <option value="Year 6">Year 6</option>
+                    <option value="Year 7">Year 7</option>
+                    <option value="Year 8">Year 8</option>
+                    <option value="Year 9">Year 9</option>
+                    <option value="Year 10">Year 10</option>
+                    <option value="Year 11 (VCE Unit 1/2)">Year 11 – VCE Unit 1/2</option>
+                    <option value="Year 12 (VCE Unit 3/4)">Year 12 – VCE Unit 3/4</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-end mt-8">
+              <button @click="nextStep()" :disabled="!form.parentName || !form.email || !form.studentName || !form.yearLevel"
+                class="btn-primary px-8 py-3 disabled:opacity-40 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-none">
+                Next: Program Details
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ STEP 2: Program Details ═══ -->
+        <div x-show="step === 2 && !submitted" x-transition:enter="transition ease-out duration-250" x-transition:enter-start="opacity-0 translate-x-4" x-transition:enter-end="opacity-100 translate-x-0">
+          <div class="glass-card rounded-3xl p-8">
+            <h2 class="font-display font-bold text-slate-800 text-2xl mb-1">Program Preferences</h2>
+            <p class="text-slate-500 text-sm mb-8">Choose the program and format that works best for your student.</p>
+
+            <!-- Program selection (radio cards) -->
+            <div class="mb-6">
+              <label class="enrol-label mb-3">Program of Interest <span class="text-red-400">*</span></label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <!-- VCE Biology -->
+                <div>
+                  <input type="radio" id="prog-bio" name="program" value="vce-bio" class="prog-radio" x-model="form.program"/>
+                  <label for="prog-bio" class="prog-radio-label">
+                    <div class="flex items-center gap-3 w-full">
+                      <div class="prog-check"></div>
+                      <div>
+                        <div class="font-semibold text-slate-800 text-sm">🧬 VCE Biology</div>
+                        <div class="text-slate-500 text-xs mt-0.5">Units 1–4 · Year 11 &amp; 12</div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <!-- VCE Chemistry -->
+                <div>
+                  <input type="radio" id="prog-chem" name="program" value="vce-chem" class="prog-radio" x-model="form.program"/>
+                  <label for="prog-chem" class="prog-radio-label">
+                    <div class="flex items-center gap-3 w-full">
+                      <div class="prog-check"></div>
+                      <div>
+                        <div class="font-semibold text-slate-800 text-sm">⚗️ VCE Chemistry</div>
+                        <div class="text-slate-500 text-xs mt-0.5">Units 1–4 · Year 11 &amp; 12</div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <!-- Year 7-10 -->
+                <div>
+                  <input type="radio" id="prog-710" name="program" value="yr7-10" class="prog-radio" x-model="form.program"/>
+                  <label for="prog-710" class="prog-radio-label">
+                    <div class="flex items-center gap-3 w-full">
+                      <div class="prog-check"></div>
+                      <div>
+                        <div class="font-semibold text-slate-800 text-sm">🔬 Year 7–10 Science</div>
+                        <div class="text-slate-500 text-xs mt-0.5">Secondary Science · All strands</div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <!-- Year 4-6 -->
+                <div>
+                  <input type="radio" id="prog-46" name="program" value="yr4-6" class="prog-radio" x-model="form.program"/>
+                  <label for="prog-46" class="prog-radio-label">
+                    <div class="flex items-center gap-3 w-full">
+                      <div class="prog-check"></div>
+                      <div>
+                        <div class="font-semibold text-slate-800 text-sm">⭐ Year 4–6 Science</div>
+                        <div class="text-slate-500 text-xs mt-0.5">Primary Science Foundations</div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Format -->
+            <div class="mb-6">
+              <label class="enrol-label mb-3">Preferred Format</label>
+              <div class="flex flex-wrap gap-2">
+                <input type="radio" id="fmt-sg" name="format" value="small-group" class="fmt-radio" x-model="form.format"/>
+                <label for="fmt-sg" class="fmt-label">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                  Small Group
+                </label>
+                <input type="radio" id="fmt-oo" name="format" value="one-on-one" class="fmt-radio" x-model="form.format"/>
+                <label for="fmt-oo" class="fmt-label">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                  1-on-1 Private
+                </label>
+                <input type="radio" id="fmt-on" name="format" value="online" class="fmt-radio" x-model="form.format"/>
+                <label for="fmt-on" class="fmt-label">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                  Online
+                </label>
+              </div>
+            </div>
+
+            <!-- Preferred days -->
+            <div class="mb-6">
+              <label class="enrol-label mb-3">Preferred Days <span class="text-slate-400 font-normal">(select all that work)</span></label>
+              <div class="flex flex-wrap gap-2">
+                <template x-for="day in ['Mon','Tue','Wed','Thu','Fri','Sat']" :key="day">
+                  <div>
+                    <input type="checkbox" :id="'day-'+day" :value="day" class="day-check" x-model="form.days"/>
+                    <label :for="'day-'+day" class="day-label" x-text="day"></label>
+                  </div>
+                </template>
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div class="mb-2">
+              <label class="enrol-label" for="message">Anything else we should know? <span class="text-slate-400 font-normal">(optional)</span></label>
+              <textarea id="message" rows="3" class="enrol-input resize-none" placeholder="e.g. current school, specific struggles, availability notes…" x-model="form.message"></textarea>
+            </div>
+
+            <div class="flex justify-between mt-8 gap-3">
+              <button @click="prevStep()" class="btn-secondary px-6 py-3">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12"/></svg>
+                Back
+              </button>
+              <button @click="nextStep()" :disabled="!form.program"
+                class="btn-primary px-8 py-3 disabled:opacity-40 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-none">
+                Review My Enquiry
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ STEP 3: Review & Send ═══ -->
+        <div x-show="step === 3 && !submitted" x-transition:enter="transition ease-out duration-250" x-transition:enter-start="opacity-0 translate-x-4" x-transition:enter-end="opacity-100 translate-x-0">
+          <div class="glass-card rounded-3xl p-8">
+            <h2 class="font-display font-bold text-slate-800 text-2xl mb-1">Review Your Enquiry</h2>
+            <p class="text-slate-500 text-sm mb-8">Double check your details before sending. We'll get back to you within 24 hours.</p>
+
+            <!-- Summary card -->
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 mb-6 divide-y divide-slate-100">
+              <!-- About section -->
+              <div class="pb-4 mb-4">
+                <p class="text-xs font-bold uppercase tracking-widest text-teal mb-3">About You &amp; Your Student</p>
+                <div class="review-row"><span class="review-label">Parent Name</span><span class="review-value" x-text="form.parentName || '—'"></span></div>
+                <div class="review-row"><span class="review-label">Email</span><span class="review-value" x-text="form.email || '—'"></span></div>
+                <div class="review-row"><span class="review-label">Phone</span><span class="review-value" x-text="form.phone || 'Not provided'"></span></div>
+                <div class="review-row"><span class="review-label">Student</span><span class="review-value" x-text="form.studentName || '—'"></span></div>
+                <div class="review-row"><span class="review-label">Year Level</span><span class="review-value" x-text="form.yearLevel || '—'"></span></div>
+              </div>
+              <!-- Program section -->
+              <div class="pt-4">
+                <p class="text-xs font-bold uppercase tracking-widest text-teal mb-3">Program Preferences</p>
+                <div class="review-row"><span class="review-label">Program</span><span class="review-value" x-text="programLabel"></span></div>
+                <div class="review-row"><span class="review-label">Format</span><span class="review-value" x-text="formatLabel"></span></div>
+                <div class="review-row"><span class="review-label">Preferred Days</span><span class="review-value" x-text="daysLabel"></span></div>
+                <div class="review-row" x-show="form.message"><span class="review-label">Notes</span><span class="review-value max-w-xs text-left" x-text="form.message"></span></div>
+              </div>
+            </div>
+
+            <!-- Privacy note -->
+            <p class="text-slate-400 text-xs leading-relaxed mb-6 flex items-start gap-2">
+              <svg class="w-3.5 h-3.5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+              Your information is kept private and will only be used to respond to your enquiry. We do not share your details with third parties.
+            </p>
+
+            <div class="flex justify-between gap-3">
+              <button @click="prevStep()" class="btn-secondary px-6 py-3">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12"/></svg>
+                Edit
+              </button>
+              <button @click="submit()" class="btn-primary px-8 py-3" style="background:linear-gradient(135deg,#0b81a2,#59a89c)">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+                Send Enquiry
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ SUCCESS STATE ═══ -->
+        <div x-show="submitted" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100">
+          <div class="glass-card rounded-3xl p-12 text-center">
+            <div class="success-icon w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6" style="background:linear-gradient(135deg,#0b81a2,#59a89c);box-shadow:0 16px 40px rgba(11,129,162,0.3)">
+              <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <h2 class="font-display font-extrabold text-slate-800 text-3xl mb-3">Enquiry Sent!</h2>
+            <p class="text-slate-500 text-base leading-relaxed mb-2">
+              Thank you, <strong x-text="form.parentName" class="text-slate-700"></strong>. We've received your enquiry for <strong x-text="form.studentName" class="text-slate-700"></strong>.
+            </p>
+            <p class="text-slate-500 text-sm leading-relaxed mb-8">
+              Our team will review your details and get back to you at <strong x-text="form.email" class="text-teal"></strong> — usually within 24 hours.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3 justify-center">
+              <a href="programs.html" class="btn-primary px-7 py-3">Explore Programs</a>
+              <a href="../index.html" class="btn-secondary px-7 py-3">Back to Home</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end form column -->
+
+      <!-- ── Sidebar (1/3 width) ── -->
+      <aside class="space-y-5 fade-in-up">
+
+        <!-- Response time card -->
+        <div class="contact-card">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-teal to-mint flex items-center justify-center flex-shrink-0" style="box-shadow:0 6px 16px rgba(11,129,162,0.25)">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-display font-bold text-slate-800 text-sm">Fast Response</h3>
+              <p class="text-slate-500 text-xs">We reply within 24 hours</p>
+            </div>
+          </div>
+          <div class="space-y-2 text-sm">
+            <div class="flex justify-between items-center py-2 border-b border-slate-100">
+              <span class="text-slate-500">Mon – Fri</span>
+              <span class="font-semibold text-slate-700">8am – 7pm</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-100">
+              <span class="text-slate-500">Saturday</span>
+              <span class="font-semibold text-slate-700">9am – 5pm</span>
+            </div>
+            <div class="flex justify-between items-center py-2">
+              <span class="text-slate-500">Sunday</span>
+              <span class="font-semibold text-slate-700">Closed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact details -->
+        <div class="contact-card">
+          <h3 class="font-display font-bold text-slate-800 text-sm mb-4">Contact Details</h3>
+          <div class="space-y-3.5">
+            <a href="mailto:info@scimindeducation.com.au" class="flex items-center gap-3 text-sm text-slate-600 hover:text-teal transition-colors group">
+              <div class="w-8 h-8 rounded-lg bg-teal/10 flex items-center justify-center flex-shrink-0 group-hover:bg-teal/20 transition-colors">
+                <svg class="w-4 h-4 text-teal" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              info@scimindeducation.com.au
+            </a>
+            <div class="flex items-center gap-3 text-sm text-slate-600">
+              <div class="w-8 h-8 rounded-lg bg-teal/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4 text-teal" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              (03) XXXX XXXX
+            </div>
+            <div class="flex items-center gap-3 text-sm text-slate-600">
+              <div class="w-8 h-8 rounded-lg bg-teal/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4 text-teal" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              Melbourne, Victoria
+            </div>
+          </div>
+        </div>
+
+        <!-- Vinsara fee note -->
+        <div class="contact-card" style="border-color:rgba(11,129,162,0.2);background:linear-gradient(135deg,rgba(11,129,162,0.04),rgba(89,168,156,0.04))">
+          <div class="flex items-start gap-3 mb-3">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-teal to-navy flex items-center justify-center flex-shrink-0">
+              <img src="../assets/images/V - White and Color.svg" alt="Vinsara" class="w-6 h-6 object-contain"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='block';"/>
+              <span style="display:none" class="font-bold text-white text-xs">V</span>
+            </div>
+            <div>
+              <h3 class="font-display font-bold text-slate-800 text-sm">Fee &amp; Invoice Enquiries</h3>
+              <p class="text-teal text-xs font-medium">via Vinsara Institute</p>
+            </div>
+          </div>
+          <p class="text-slate-500 text-xs leading-relaxed">All invoices, payment plans, and fee-related queries are managed by our partner <strong class="text-slate-700">Vinsara Institute of Education</strong>. Contact them directly for billing matters.</p>
+        </div>
+
+        <!-- Session Timetable -->
+        <div class="contact-card">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-teal to-mint flex items-center justify-center flex-shrink-0" style="box-shadow:0 6px 16px rgba(11,129,162,0.25)">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-display font-bold text-slate-800 text-sm">Session Timetable</h3>
+              <p class="text-slate-500 text-xs">Current term schedule</p>
+            </div>
+          </div>
+
+          <div class="space-y-3 mb-4">
+
+            <!-- VCE Biology -->
+            <div class="rounded-xl p-3 bg-slate-50 border border-slate-100">
+              <div class="flex items-center gap-1.5 mb-2">
+                <span class="text-sm">🧬</span>
+                <span class="font-semibold text-slate-700 text-xs">VCE Biology</span>
+              </div>
+              <div class="space-y-1 text-xs">
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-500">Saturday</span>
+                  <span class="font-semibold text-slate-700">10:00am – 11:30am</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-500">Wednesday</span>
+                  <span class="font-semibold text-slate-700">5:30pm – 7:00pm</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- VCE Chemistry -->
+            <div class="rounded-xl p-3 bg-slate-50 border border-slate-100">
+              <div class="flex items-center gap-1.5 mb-2">
+                <span class="text-sm">⚗️</span>
+                <span class="font-semibold text-slate-700 text-xs">VCE Chemistry</span>
+              </div>
+              <div class="space-y-1 text-xs">
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-500">Saturday</span>
+                  <span class="font-semibold text-slate-700">12:00pm – 1:30pm</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-500">Thursday</span>
+                  <span class="font-semibold text-slate-700">5:30pm – 7:00pm</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Year 7–10 Science -->
+            <div class="rounded-xl p-3 bg-slate-50 border border-slate-100">
+              <div class="flex items-center gap-1.5 mb-2">
+                <span class="text-sm">🔬</span>
+                <span class="font-semibold text-slate-700 text-xs">Year 7–10 Science</span>
+              </div>
+              <div class="space-y-1 text-xs">
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-500">Sunday</span>
+                  <span class="font-semibold text-slate-700">10:00am – 11:30am</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-500">Tuesday</span>
+                  <span class="font-semibold text-slate-700">4:30pm – 6:00pm</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Year 4–6 Science -->
+            <div class="rounded-xl p-3 bg-slate-50 border border-slate-100">
+              <div class="flex items-center gap-1.5 mb-2">
+                <span class="text-sm">⭐</span>
+                <span class="font-semibold text-slate-700 text-xs">Year 4–6 Science</span>
+              </div>
+              <div class="space-y-1 text-xs">
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-500">Sunday</span>
+                  <span class="font-semibold text-slate-700">12:00pm – 1:00pm</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-500">Friday</span>
+                  <span class="font-semibold text-slate-700">4:00pm – 5:00pm</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Flexible availability note -->
+          <div class="flex items-start gap-2.5 rounded-xl p-3" style="background:rgba(11,129,162,0.06);border:1px solid rgba(11,129,162,0.18)">
+            <svg class="w-4 h-4 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              <strong class="text-teal">Schedule doesn't work for you?</strong><br/>
+              No problem — <a href="mailto:info@scimindeducation.com.au" class="text-teal font-semibold hover:underline">contact us</a> and we'll do our best to arrange a session time that suits your availability.
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="contact-card">
+          <h3 class="font-display font-bold text-slate-800 text-sm mb-3">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="programs.html" class="flex items-center gap-2 text-sm text-slate-600 hover:text-teal transition-colors py-1">
+              <svg class="w-3.5 h-3.5 text-teal flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+              Browse All Programs
+            </a></li>
+            <li><a href="vce-biology.html" class="flex items-center gap-2 text-sm text-slate-600 hover:text-teal transition-colors py-1">
+              <svg class="w-3.5 h-3.5 text-teal flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+              VCE Biology Details
+            </a></li>
+            <li><a href="vce-chemistry.html" class="flex items-center gap-2 text-sm text-slate-600 hover:text-teal transition-colors py-1">
+              <svg class="w-3.5 h-3.5 text-teal flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+              VCE Chemistry Details
+            </a></li>
+            <li><a href="about.html" class="flex items-center gap-2 text-sm text-slate-600 hover:text-teal transition-colors py-1">
+              <svg class="w-3.5 h-3.5 text-teal flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+              Meet the Tutors
+            </a></li>
+          </ul>
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  WHAT HAPPENS NEXT                   ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<section class="py-20 px-6" aria-labelledby="next-heading">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-14 fade-in-up">
+      <span class="section-badge mb-4 inline-block">After You Enquire</span>
+      <h2 id="next-heading" class="font-display font-extrabold text-4xl md:text-5xl text-white mb-4">What Happens Next?</h2>
+      <p class="text-white/50 max-w-xl mx-auto">From enquiry to first session — here's our simple onboarding process.</p>
+    </div>
+    <div class="relative fade-in-up">
+      <!-- Horizontal connector (lg+) -->
+      <div class="hidden lg:block absolute top-10 h-0.5 z-0" style="left:calc(8.33% + 40px);right:calc(8.33% + 40px);background:linear-gradient(90deg,rgba(11,129,162,0.6),rgba(89,168,156,0.9),rgba(11,129,162,0.6))"></div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Step 1 -->
+        <div class="flex flex-col items-center text-center group">
+          <div class="w-20 h-20 rounded-2xl flex items-center justify-center z-10 relative mb-5 group-hover:scale-110 transition-transform duration-200 shadow-lg" style="background:linear-gradient(135deg,#0b81a2,#086882);box-shadow:0 8px 24px rgba(11,129,162,0.35)">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+          </div>
+          <div class="glass-card rounded-2xl p-5 w-full" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08)">
+            <span class="text-teal text-xs font-bold uppercase tracking-wider">Step 01</span>
+            <h3 class="font-display font-bold text-white text-base mt-1 mb-2">You Send Enquiry</h3>
+            <p class="text-white/45 text-sm leading-relaxed">Complete the form above with your student's details and program preference.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex flex-col items-center text-center group">
+          <div class="w-20 h-20 rounded-2xl flex items-center justify-center z-10 relative mb-5 group-hover:scale-110 transition-transform duration-200 shadow-lg" style="background:linear-gradient(135deg,#59a89c,#448a7e);box-shadow:0 8px 24px rgba(89,168,156,0.3)">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <div class="glass-card rounded-2xl p-5 w-full" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08)">
+            <span class="text-mint text-xs font-bold uppercase tracking-wider">Step 02</span>
+            <h3 class="font-display font-bold text-white text-base mt-1 mb-2">We Reach Out</h3>
+            <p class="text-white/45 text-sm leading-relaxed">Our team reviews your enquiry and contacts you within 24 hours to discuss the best fit.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex flex-col items-center text-center group">
+          <div class="w-20 h-20 rounded-2xl flex items-center justify-center z-10 relative mb-5 group-hover:scale-110 transition-transform duration-200 shadow-lg" style="background:linear-gradient(135deg,#003a7d,#0050b0);box-shadow:0 8px 24px rgba(0,58,125,0.35)">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+          </div>
+          <div class="glass-card rounded-2xl p-5 w-full" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08)">
+            <span class="text-teal text-xs font-bold uppercase tracking-wider">Step 03</span>
+            <h3 class="font-display font-bold text-white text-base mt-1 mb-2">Enrolment Confirmed</h3>
+            <p class="text-white/45 text-sm leading-relaxed">Program, tutor, timetable, and format confirmed. Fee details sent via Vinsara Institute.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="flex flex-col items-center text-center group">
+          <div class="w-20 h-20 rounded-2xl flex items-center justify-center z-10 relative mb-5 group-hover:scale-110 transition-transform duration-200 shadow-lg" style="background:linear-gradient(135deg,#0b81a2,#59a89c);box-shadow:0 8px 24px rgba(11,129,162,0.4)">
+            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <div class="glass-card rounded-2xl p-5 w-full" style="background:rgba(255,255,255,0.04);border:1px solid rgba(11,129,162,0.25)">
+            <span class="text-xs font-bold uppercase tracking-wider" style="background:linear-gradient(90deg,#0b81a2,#59a89c);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Step 04</span>
+            <h3 class="font-display font-bold text-white text-base mt-1 mb-2">First Session!</h3>
+            <p class="text-white/45 text-sm leading-relaxed">Your student attends their first class — oriented, resourced, and ready to learn.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  FAQ                                 ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<section class="py-20 px-6 section-grey" x-data="{ open: null }" aria-labelledby="faq-enrol-heading">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-12 fade-in-up">
+      <span class="section-badge mb-4 inline-block">Common Questions</span>
+      <h2 id="faq-enrol-heading" class="section-title text-4xl mb-4">Enrolment FAQs</h2>
+      <p class="section-subtitle">Answers to the questions we hear most before enrolment.</p>
+    </div>
+    <div class="space-y-3 fade-in-up">
+
+      <!-- Q1 -->
+      <div class="contact-card p-0 overflow-hidden">
+        <button @click="open = open === 1 ? null : 1" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4" :aria-expanded="open === 1">
+          <span class="font-semibold text-slate-800 text-sm">When can my student start?</span>
+          <svg :class="open === 1 ? 'rotate-180 text-teal' : 'text-slate-400'" class="w-5 h-5 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="open === 1" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" class="px-6 pb-5 text-slate-500 text-sm leading-relaxed border-t border-slate-100">
+          Students can typically start within 1–2 weeks of confirmation. We work with your timetable to find the best session slot. Mid-term enrolments are welcome.
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="contact-card p-0 overflow-hidden">
+        <button @click="open = open === 2 ? null : 2" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4" :aria-expanded="open === 2">
+          <span class="font-semibold text-slate-800 text-sm">How much does tutoring cost?</span>
+          <svg :class="open === 2 ? 'rotate-180 text-teal' : 'text-slate-400'" class="w-5 h-5 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="open === 2" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" class="px-6 pb-5 text-slate-500 text-sm leading-relaxed border-t border-slate-100">
+          All fees are managed by Vinsara Institute of Education. After your enrolment is confirmed, they will send you a full fee schedule and invoice. Payment plans are available on request.
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="contact-card p-0 overflow-hidden">
+        <button @click="open = open === 3 ? null : 3" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4" :aria-expanded="open === 3">
+          <span class="font-semibold text-slate-800 text-sm">Can I enrol in more than one program?</span>
+          <svg :class="open === 3 ? 'rotate-180 text-teal' : 'text-slate-400'" class="w-5 h-5 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="open === 3" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" class="px-6 pb-5 text-slate-500 text-sm leading-relaxed border-t border-slate-100">
+          Yes — many of our VCE students attend both Biology and Chemistry sessions. Just select one program in the form and mention the others in the notes field. We'll plan the timetable around both.
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="contact-card p-0 overflow-hidden">
+        <button @click="open = open === 4 ? null : 4" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4" :aria-expanded="open === 4">
+          <span class="font-semibold text-slate-800 text-sm">Is online tutoring as effective as in-person?</span>
+          <svg :class="open === 4 ? 'rotate-180 text-teal' : 'text-slate-400'" class="w-5 h-5 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="open === 4" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" class="px-6 pb-5 text-slate-500 text-sm leading-relaxed border-t border-slate-100">
+          Our online sessions use interactive whiteboards, screen sharing, and real-time feedback tools. Many students find them just as engaging and productive as face-to-face sessions.
+        </div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="contact-card p-0 overflow-hidden">
+        <button @click="open = open === 5 ? null : 5" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4" :aria-expanded="open === 5">
+          <span class="font-semibold text-slate-800 text-sm">What if my student misses a session?</span>
+          <svg :class="open === 5 ? 'rotate-180 text-teal' : 'text-slate-400'" class="w-5 h-5 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div x-show="open === 5" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" class="px-6 pb-5 text-slate-500 text-sm leading-relaxed border-t border-slate-100">
+          We ask for 24 hours notice for cancellations. In most cases we can arrange a makeup session or provide notes and materials for the missed class so your student doesn't fall behind.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║  FOOTER                              ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<footer class="bg-[#020d1a] border-t border-white/5 px-6 pt-14 pb-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+      <div class="md:col-span-2">
+        <img src="../assets/images/H - White and Color.svg" alt="SciMind Education" class="h-10 w-auto mb-4 object-contain"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+        <div style="display:none" class="items-center gap-2 mb-4">
+          <span class="font-display font-bold text-white text-xl">SciMind Education</span>
+        </div>
+        <p class="text-white/40 text-sm leading-relaxed max-w-xs">Specialist science tutoring for VCE and secondary students across Melbourne. Partnered with Vinsara Institute of Education.</p>
+      </div>
+      <nav aria-label="Programs footer links">
+        <h4 class="font-semibold text-white/70 text-sm mb-4 uppercase tracking-wider">Programs</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="vce-biology.html"       class="text-white/40 hover:text-mint transition-colors">VCE Biology</a></li>
+          <li><a href="vce-chemistry.html"     class="text-white/40 hover:text-mint transition-colors">VCE Chemistry</a></li>
+          <li><a href="year7-10-science.html"  class="text-white/40 hover:text-mint transition-colors">Year 7–10 Science</a></li>
+          <li><a href="year4-6-science.html"   class="text-white/40 hover:text-mint transition-colors">Year 4–6 Science</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Site footer links">
+        <h4 class="font-semibold text-white/70 text-sm mb-4 uppercase tracking-wider">Quick Links</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="../index.html"          class="text-white/40 hover:text-mint transition-colors">Home</a></li>
+          <li><a href="about.html"             class="text-white/40 hover:text-mint transition-colors">About Us</a></li>
+          <li><a href="programs.html"          class="text-white/40 hover:text-mint transition-colors">All Programs</a></li>
+          <li><a href="learning-hub.html"      class="text-white/40 hover:text-mint transition-colors">Learning Hub</a></li>
+          <li><a href="../index.html#partner"  class="text-white/40 hover:text-mint transition-colors">Partnership</a></li>
+          <li><a href="enrol.html"             class="text-mint/70 hover:text-mint transition-colors">Enrol / Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="border-t border-white/5 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-white/30 text-xs">
+      <p>© 2026 SciMind Education. All rights reserved.</p>
+      <p>In partnership with <a href="../index.html#partner" class="text-mint/60 hover:text-mint transition-colors">Vinsara Institute of Education</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
